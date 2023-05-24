@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords"
+        content="Đồ sơ sinh, đồ chơi xếp hình, Sữa Nan, xe đẩy trẻ em, giuong ngu tre em, thảm chơi cho bé, ba lô cho bé, đồ bơi cho bé, Giày bé trai, Sữa bột trẻ em, thời trang cho bé, nôi trẻ em, máy hút sữa" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Đăng ký - Đăng nhập tài khoản</title>
+    <link rel="stylesheet" type="text/css" media="all" href="./css/boostrap-styleLogin.css" />
+    <style>
+        button {
+            padding: 10px;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body data-container="body" class="customer-account-login page-layout-1column">
+
+
+
+
+    <div><a href="./index.html"><button>Quay Lại Trang Chủ</button></a></div>
+    <div class="page-wrapper">
+        <header class="page-header">
+
+            <div class="header content"><span data-action="toggle-nav" class="action nav-toggle"><span>Toggle
+                        Nav</span></span>
+
+                <div data-block="minicart" class="minicart-wrapper">
+                    <a class="go-shoppingcart" href="product.html"></a>
+                    <a class="action showcart" href="product.html" data-bind="scope: 'minicart_content'"
+                        onclick="return false;">
+                        <span class="text">Giỏ hàng</span>
+                        <span class="counter qty empty"
+                            data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+                            <span class="counter-number"><!-- ko text: getSummaryCount() --><!-- /ko --></span>
+                            <span class="counter-label">
+
+                            </span>
+                        </span>
+                    </a>
+
+                    <div class="custom-message-minicart" data-block="custom-message-minicart">
+                        <div>
+                            <!-- ko if: messages().messages && messages().messages.length > 0 -->
+                            <div class="messages">
+                                <!-- ko if: message.is_cart == true -->
+                                <div>
+                                    <div></div>
+
+                                </div>
+                                <!-- /ko-->
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                </div>
+                <div class="block block-search">
+                    <div class="block block-title"><strong>Tìm kiếm</strong></div>
+                    <div class="block block-content">
+                        <form class="form minisearch" id="search_mini_form" action="reg.html" method="post">
+                            <div class="field search">
+                                <span class="btn search-close"></span>
+                                <label class="label" for="search" data-role="minisearch-label">
+                                    <span>Tìm kiếm</span>
+                                </label>
+                                <div class="control">
+                                    <input id="search" data-mage-init='{"quickSearch":{
+                                "formSelector":"#search_mini_form",
+                                "url":"#",
+                                "destinationSelector":"#search_autocomplete"}
+                           }' type="text" name="q" value="" placeholder="Bạn tìm gì hôm nay?" class="input-text"
+                                        maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both"
+                                        autocomplete="off" />
+                                    <div id="search_autocomplete" class="search-autocomplete"></div>
+                                    <div class="nested">
+                                        <a class="action advanced" href="#" data-action="baitaplon">
+                                            Tìm kiếm nâng cao </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button type="submit" title="Tìm kiếm" class="action search">
+                                    <span>Tìm kiếm</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <ul class="compare wrapper">
+                    <li class="item link compare" data-bind="scope: 'compareProducts'"
+                        data-role="compare-products-link">
+                        <a class="action compare no-display" title="So sánh sản phẩm"
+                            data-bind="attr: {'href': compareProducts().listUrl}, css: {'no-display': !compareProducts().count}">
+                            So sánh sản phẩm <span class="counter qty"
+                                data-bind="text: compareProducts().countCaption"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="notification">
+                    <div class="notification-box">
+                        <a class="box-icon" href="#">
+                            <i class="icon-bbm-kiemtradonhang"></i>
+                            <span>Kiểm tra đơn hàng</span>
+                        </a>
+                    </div>
+                    <div class="notification-noti">
+                        <span class="noti-icon">
+                            <svg xmlns="#" viewBox="0 0 24 24" width="24" height="24">
+                                <path
+                                    d="M21.2,16.788,24,19.212v1.21H0v-1.21l2.8-2.424V10.211A6.79,6.79,0,0,1,4.806,5.393,9.5,9.5,0,0,1,9.885,2.655V1.789A1.635,1.635,0,0,1,10.466.521,2.2,2.2,0,0,1,12,0a2.2,2.2,0,0,1,1.534.521,1.635,1.635,0,0,1,.581,1.268v.865a9.5,9.5,0,0,1,5.079,2.739A6.783,6.783,0,0,1,21.2,10.211v6.578Zm-7.229,6.489A2.9,2.9,0,0,1,12,24a2.863,2.863,0,0,1-1.976-.722,2.195,2.195,0,0,1-.819-1.7H14.8A2.207,2.207,0,0,1,13.976,23.278Z" />
+                            </svg>
+                        </span>
+                        <span class="noti-count">
+                            <span>0</span>
+                        </span>
+                        <span class="noti-label">Thông báo</span>
+                    </div>
+                </div>
+                <div class="btn-menu-vertical-mobile">
+                    <span>Danh mục</span>
+                </div>
+                <div class="nav-sale-mobile">
+                    <a href="#">
+                        <span>Khuyến mãi</span>
+                    </a>
+                </div>
+                <div class="account-link-mobile">
+                    <a href="#">
+                        <span>Tài khoản</span>
+                    </a>
+                </div>
+                <ul class="header links">
+                    <li class="greet welcome" data-bind="scope: 'customer'">
+                        <!-- ko if: customer().fullname  -->
+                        <span data-bind="text: new String('Chào mừng, %1!').replace('%1', customer().firstname)">
+                        </span>
+                        <!-- /ko -->
+                        <!-- ko ifnot: customer().fullname  -->
+                        <span data-bind='html:"T&#xE0;i&#x20;kho&#x1EA3;n"'></span>
+                        <!-- /ko -->
+                    </li>
+                    <li class="authorization-link" data-label="&#x20;ho&#x1EB7;c&#x20;">
+                        <a href="sigup.html">
+                            Đăng ký </a>
+                    </li>
+                    <li>
+                        <a href="login.html">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+
+
+        <div class="columns">
+            <div class="column main"><input name="form_key" type="hidden" value="vQdWtNFD28Y65rEj" />
+
+
+                <div class="login-container">
+                    <div class="login-signup">
+                        <div class="login-signup-inner">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a id="login_a" href="login.html" aria-controls="login" role="tab" data-toggle="tab"
+                                        aria-expanded="true">Đăng Ký</a>
+                                </li>
+                                <li role="presentation" class="">
+                                    <a id="signup_a" href="login.html" aria-controls="signup" role="tab"
+                                        data-toggle="tab" aria-expanded="false">Đăng nhập</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="login">
+                                    <div class="block block-customer-login">
+                                        <div class="block-content" aria-labelledby="block-customer-login-heading">
+                                            <form class="form form-login" action="reg.html" method="post"
+                                                id="login-form" data-mage-init='{"baitaplon'>
+                                                <input name="form_key" type="hidden" value="vQdWtNFD28Y65rEj" />
+                                                <fieldset class="fieldset login">
+                                                    <div class=" field email required">
+                                                        <label class="label" for="email"><span>Email/ Số điện
+                                                                thoại</span></label>
+                                                        <div class="control">
+                                                            <input name="login[username]" value="" autocomplete="off"
+                                                                id="email" type="text" class="input-text"
+                                                                title="Nh&#x1EAD;p&#x20;Email&#x2F;&#x20;S&#x1ED1;&#x20;&#x0111;i&#x1EC7;n&#x20;tho&#x1EA1;i"
+                                                                placeholder="Nh&#x1EAD;p&#x20;Email&#x2F;&#x20;S&#x1ED1;&#x20;&#x0111;i&#x1EC7;n&#x20;tho&#x1EA1;i"
+                                                                data-validate="{required:true, 'email-or-mobile':true,'no-whitespace':true}"
+                                                                tabindex="1">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="field password required">
+                                                        <label for="pass" name="password" class="label"><span>Mật
+                                                                khẩu</span></label>
+                                                        <div class="control">
+
+                                                            <input name="login[password]" type="password"
+                                                                autocomplete="off" class="input-text" id="pass"
+                                                                title="Nh&#x1EAD;p&#x20;m&#x1EAD;t&#x20;kh&#x1EA9;u"
+                                                                placeholder="Nh&#x1EAD;p&#x20;m&#x1EAD;t&#x20;kh&#x1EA9;u"
+                                                                data-validate="{required:true}" tabindex="2">
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+                                                    <div class="field confirmation required">
+                                                        <label for="confirmpass" class="label"><span>Xác Nhận Mật
+                                                                khẩu</span></label>
+                                                        <div class="control">
+                                                            <input name="sigup[confirmpassword]" type="password"
+                                                                name="password_confirmation" title="Xác nhận mật khẩu"
+                                                                placeholder="Xác nhận mật khẩu"
+                                                                id="password-confirmation" class="input-text"
+                                                                data-validate="{required:true, equalTo:'#password'}"
+                                                                autocomplete="off" aria-required="true">
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <!-- <div class="field field-12 region required">
+                                                        <div class="control">
+                                                            <select id="region_id" name="region_id"
+                                                                title="Tỉnh/Thành phố"
+                                                                class="validate-select required-entry" required=""
+                                                                style="" aria-required="true" defaultvalue="0">
+                                                                <option value="">Chọn Tỉnh/Thành Phố</option>
+                                                                <option value="722">Thành phố Hà Nội</option>
+                                                                <option value="771">Thành phố Hồ Chí Minh</option>
+                                                                <option value="741">Thành phố Hải Phòng</option>
+                                                                <option value="753">Thành phố Đà Nẵng</option>
+                                                                <option value="780">Thành phố Cần Thơ</option>
+                                                                <option value="778">Tỉnh An Giang</option>
+                                                                <option value="770">Tỉnh Bà Rịa - Vũng Tàu</option>
+                                                                <option value="736">Tỉnh Bắc Giang</option>
+                                                                <option value="739">Tỉnh Bắc Ninh</option>
+                                                                <option value="768">Tỉnh Bình Dương</option>
+                                                                <option value="766">Tỉnh Bình Phước</option>
+                                                                <option value="760">Tỉnh Bình Thuận</option>
+                                                                <option value="742">Tỉnh Hưng Yên</option>
+                                                                <option value="758">Tỉnh Khánh Hòa</option>
+                                                                <option value="779">Tỉnh Kiên Giang</option>
+                                                                <option value="765">Tỉnh Lâm Đồng</option>
+                                                                <option value="734">Tỉnh Lạng Sơn</option>
+                                                                <option value="772">Tỉnh Long An</option>
+                                                                <option value="745">Tỉnh Nam Định</option>
+                                                                <option value="748">Tỉnh Nghệ An</option>
+                                                                <option value="746">Tỉnh Ninh Bình</option>
+                                                                <option value="759">Tỉnh Ninh Thuận</option>
+                                                                <option value="737">Tỉnh Phú Thọ</option>
+                                                                <option value="735">Tỉnh Quảng Ninh</option>
+                                                                <option value="767">Tỉnh Tây Ninh</option>
+                                                                <option value="733">Tỉnh Thái Nguyên</option>
+                                                                <option value="747">Tỉnh Thanh Hóa</option>
+                                                                <option value="752">Tỉnh Thừa Thiên Huế</option>
+                                                                <option value="726">Tỉnh Tuyên Quang</option>
+                                                                <option value="776">Tỉnh Vĩnh Long</option>
+                                                                <option value="731">Tỉnh Yên Bái</option>
+                                                                <option value="763">Tỉnh Đắk Lắk</option>
+                                                                <option value="769">Tỉnh Đồng Nai</option>
+                                                                <option value="725">Tỉnh Bắc Kạn</option>
+                                                                <option value="783">Tỉnh Bạc Liêu</option>
+                                                                <option value="774">Tỉnh Bến Tre</option>
+                                                                <option value="756">Tỉnh Bình Định</option>
+                                                                <option value="784">Tỉnh Cà Mau</option>
+                                                                <option value="724">Tỉnh Cao Bằng</option>
+                                                                <option value="762">Tỉnh Gia Lai</option>
+                                                                <option value="723">Tỉnh Hà Giang</option>
+                                                                <option value="744">Tỉnh Hà Nam</option>
+                                                                <option value="749">Tỉnh Hà Tĩnh</option>
+                                                                <option value="740">Tỉnh Hải Dương</option>
+                                                                <option value="781">Tỉnh Hậu Giang</option>
+                                                                <option value="732">Tỉnh Hoà Bình</option>
+                                                                <option value="761">Tỉnh Kon Tum</option>
+                                                                <option value="729">Tỉnh Lai Châu</option>
+                                                                <option value="727">Tỉnh Lào Cai</option>
+                                                                <option value="757">Tỉnh Phú Yên</option>
+                                                                <option value="750">Tỉnh Quảng Bình</option>
+                                                                <option value="754">Tỉnh Quảng Nam</option>
+                                                                <option value="755">Tỉnh Quảng Ngãi</option>
+                                                                <option value="751">Tỉnh Quảng Trị</option>
+                                                                <option value="782">Tỉnh Sóc Trăng</option>
+                                                                <option value="730">Tỉnh Sơn La</option>
+                                                                <option value="743">Tỉnh Thái Bình</option>
+                                                                <option value="773">Tỉnh Tiền Giang</option>
+                                                                <option value="775">Tỉnh Trà Vinh</option>
+                                                                <option value="738">Tỉnh Vĩnh Phúc</option>
+                                                                <option value="764">Tỉnh Đắk Nông</option>
+                                                                <option value="728">Tỉnh Điện Biên</option>
+                                                                <option value="777">Tỉnh Đồng Tháp</option>
+                                                            </select>
+                                                            <input name="sigup[address]" type="text" id="region" name="region" value=""
+                                                                title="Tỉnh/Thành phố" class="input-text"
+                                                                style="display:none;" autocomplete="off"
+                                                                aria-required="true">
+                                                        </div>
+                                                    </div> -->
+
+                                                    <div class="actions-toolbar">
+                                                        <div class="primary"><button type="submit"
+                                                                class="action login primary" name="btn-reg"><span>Đăng
+                                                                    ký</span></button></div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                                <!--  -->
+                                <div role="tabpanel" class="tab-pane" id="signup">
+                                    <form class="form create account form-create-account" action="reg.html"
+                                        method="post" id="form-validate" enctype="multipart/form-data"
+                                        autocomplete="off"
+                                        data-mage-init='{"Magenest_AdvancedCheckout/js/customer/address/form/address":{}}'>
+                                        <input name="form_key" type="hidden" value="vQdWtNFD28Y65rEj" />
+                                        <fieldset class="fieldset create info">
+                                            <legend class="legend"><span>Thông tin cá nhân</span></legend>
+                                            <input type="hidden" name="success_url" value="">
+                                            <input type="hidden" name="error_url" value="">
+                                            <div class="field field-name-lastname required">
+                                                <label>Họ</label>
+                                                <div class="control">
+                                                    <input type="text" id="lastname" name="lastname" value=""
+                                                        title="H&#x1ECD;" placeholder="H&#x1ECD;"
+                                                        class="input-text required-entry"
+                                                        data-validate="{required:true}">
+                                                </div>
+                                            </div>
+                                            <div class="field field-name-firstname required">
+                                                <label>Tên</label>
+                                                <div class="control">
+                                                    <input type="text" id="firstname" name="firstname" value=""
+                                                        title="T&#xEA;n" placeholder="T&#xEA;n"
+                                                        class="input-text required-entry"
+                                                        data-validate="{required:true}">
+                                                </div>
+                                            </div>
+                                            <div class="field choice newsletter">
+                                                <input type="checkbox" name="is_subscribed"
+                                                    title="&#x0110;&#x0103;ng&#x20;k&#xFD;&#x20;nh&#x1EAD;n&#x20;b&#x1EA3;ng&#x20;tin"
+                                                    value="1" id="is_subscribed" class="checkbox">
+                                                <label for="is_subscribed" class="label"><span>Đăng ký nhận bảng
+                                                        tin</span></label>
+                                            </div>
+                                            <div class="field field-12 required" style="clear: both;">
+                                                <div class="control">
+                                                    <input type="email" name="email" autocomplete="email"
+                                                        id="email_address" value="" title="Email" placeholder="Email"
+                                                        class="input-text"
+                                                        data-validate="{required:true, 'validate-email':true,'no-whitespace':true}">
+                                                </div>
+                                            </div>
+                                            <div class="field field-12 telephone required">
+                                                <label>Số điện thoại</label>
+                                                <div class="control">
+                                                    <input type="text" name="telephone" id="telephone" value=""
+                                                        title="S&#x1ED1;&#x20;&#x0111;i&#x1EC7;n&#x20;tho&#x1EA1;i"
+                                                        placeholder="S&#x1ED1;&#x20;&#x0111;i&#x1EC7;n&#x20;tho&#x1EA1;i"
+                                                        class="input-text mobileVN required required-entry">
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="mobile_number" id="mobile_number" value=""
+                                                class="input-text">
+                                        </fieldset>
+                                        <fieldset class="fieldset create account"
+                                            data-hasrequired="&#x2A;&#x20;B&#x1EAF;t&#x20;bu&#x1ED9;c">
+                                            <legend class="legend"><span>Thông tin đăng nhập</span></legend>
+                                            <div class="field password required">
+                                                <div class="control">
+                                                    <input type="password" name="password" id="password"
+                                                        title="M&#x1EAD;t&#x20;kh&#x1EA9;u"
+                                                        placeholder="M&#x1EAD;t&#x20;kh&#x1EA9;u" class="input-text"
+                                                        data-password-min-length="6"
+                                                        data-password-min-character-sets="1"
+                                                        data-validate="{required:true, 'validate-customer-password':true}"
+                                                        autocomplete="off">
+                                                    <div id="password-strength-meter-container"
+                                                        data-role="password-strength-meter" aria-live="polite">
+                                                        <div id="password-strength-meter"
+                                                            class="password-strength-meter">
+                                                            Độ dài mật khẩu:
+                                                            <span id="password-strength-meter-label"
+                                                                data-role="password-strength-meter-label">
+                                                                Không có mật khẩu </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field confirmation required">
+                                                <div class="control">
+                                                    <input type="password" name="password_confirmation"
+                                                        title="X&#xE1;c&#x20;nh&#x1EAD;n&#x20;m&#x1EAD;t&#x20;kh&#x1EA9;u"
+                                                        placeholder="X&#xE1;c&#x20;nh&#x1EAD;n&#x20;m&#x1EAD;t&#x20;kh&#x1EA9;u"
+                                                        id="password-confirmation" class="input-text"
+                                                        data-validate="{required:true, equalTo:'#password'}"
+                                                        autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+
+                                        <div class="primary">
+                                            <button type="submit" class="action submit primary"
+                                                title="&#x0110;&#x0103;ng&#x20;k&#xFD;">
+                                                <span>Đăng ký</span></button>
+                                        </div>
+                                        <div class="secondary">
+                                            <a class="action back" lại></a>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="network-login">
+                        <div class="label"><span>Hoặc</span></div>
+                        <div class="network facebook">
+                            <a href="#" class="login facebook"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i><span>Đăng
+                                    nhập bằng Facebook</span></a>
+                        </div>
+                        <div class="network google">
+                            <a href="#" class="login google"><i class="fa fa-google" aria-hidden="true"></i><span>Đăng
+                                    nhập
+                                    bằng Google</span></a>
+                            </a>
+                        </div>
+                        <div class="app-download">
+                            <div class="download-title">
+                                <span> Tải GiayShop để mua hàng thuận tiện hơn!</span>
+                            </div>
+                            <div class="download-content">
+
+
+                                <div class="download-info">
+                                    <ul>
+                                        <li>
+                                            <img lazy
+>
+                                            <span>Mua hàng nhanh gọn thuận tiện</span>
+                                        </li>
+                                        <li>
+                                            <img lazy
+>
+                                            <span>Tích và tra cứu Bizo nhanh gọn</span>
+                                        </li>
+                                        <li>
+                                            <img lazy
+>
+                                            <span>Cập nhật thông tin các chương trình khuyến mãi</span>
+                                        </li>
+                                        <li>
+                                            <img lazy
+>
+                                            <span>Cập nhật kiến thức chăm sóc bé</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget block block-static-block block-id67">
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

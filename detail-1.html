@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="vie">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Giày thể thao</title>
+    <meta http-equiv="content-language" content="vie" />
+    <meta property="og:title" content="Giày thể thao" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="./img./logo-edit2.jpg" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link rel="stylesheet" type="text/css" href="./css/boostrap-min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-chosen.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mega-menu2.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleMenu.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fs-02.web4s.vn/template/fs-02/webroot/assets/css/fonts_vnsitecss.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://fs-02.web4s.vn/template/fs-02/webroot/css/style-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fs-02.web4s.vn/template/fs-02/webroot/assets/css/fontello.css" />
+    <link rel="stylesheet" type="text/css" href="./css/page.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- js -->
+    <script type="text/javascript" src="./js/jquery2-1-1.js"></script>
+    <!-- boostrap ảnh hưởng tới product  danh mục -->
+    <script type="text/javascript" src="./js/boostrap-min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107079686-1"></script>
+    <!--  -->
+</head>
+
+<body>
+    <!-- ảnh hưởng style file boostrap-min.css -->
+    <div id="header" class="nh-row">
+        <div id="header-row-20" class="nh-row">
+            <div class="container">
+
+                <div class="row">
+                    <div data-aos="fade-right" class="col-sm-3 col-xs-3">
+                    </div>
+                    <div class="col-sm-5 col-xs-5">
+                        <div class="box-right">
+                            <div class="item-language item-dropdown Foatleft item-inline dropdown"> <a href="#"
+                                    class=""> <span class="icon-flag icon-flag-vi hide">&nbsp;</span> <span
+                                        class="icon_img"> <img width="16px" src="./img/logoVietNam.png"> </span>
+                                    Viêt nam <span class="fa fa-angle-down"></span> </a>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- Số điện thoại header -->
+                        <p class="phone-number hidden-xs"> Điện thoại : 0354781332</p>
+                    </div>
+                    <!-- Giỏi hàng -->
+                    <div class="col-sm-4 col-xs-4">
+                        <div class="nav-right ">
+                            <div class="mini-cart-order cart-order item-dropdown Foatright item-inline dropdown"> <a
+                                    href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"> <i
+                                        class="icon icon-cart"></i> <span class="number">0</span> </a>
+                                <div class="dropdown-menu pull-right" role="menu" aria-labelledby="drop61">
+                                    <div class="shoppingcart-box">
+                                        <div class="scrollbar" id="style-3">
+                                            <ul class="list clearfix force-overflow">
+                                                <li class="item"> <small class="text-center">Không có sản phẩm nào trong
+                                                        giỏ hàng</small></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="warp-loading-block hidden">
+                                            <div class="warp-bg"></div>
+                                        </div>
+                                    </div>
+                                    <!-- CART SẢN PHẨM -->
+
+                                    <!-- cart 2 -->
+
+                                    <!--  -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Nhớ sửa thanh search -->
+                        <div class="search">
+                            <input class="srch" type="search" name="" placeholder="Bạn cần tìm gì?">
+                            <a href="#"> <button class="btn">Search</button></a>
+                        </div>
+                        <style>
+                            body>* {
+                                max-width: 100%;
+                                max-height: 100%;
+                                overflow: hidden;
+                            }
+
+                            body>*>* {
+                                max-width: 100%;
+                            }
+
+
+
+                            /* Ẩn thanh trượt trên tất cả các phần tử */
+                            /* ::-webkit-scrollbar {
+  display: none;
+} */
+
+                            .nav-right .item-dropdown {
+                                margin: 5;
+                                margin-top: 15px;
+                                padding: 0;
+                            }
+
+                            i.icon.icon-cart {
+                                margin: 3;
+                            }
+
+                            .item-language.item-dropdown.Foatleft.item-inline.dropdown {
+                                margin-left: 10px;
+                                margin-top: 14px;
+                            }
+
+                            .search {
+                                width: 330px;
+                                float: left;
+                                margin-left: -160px;
+                                margin-top: 20px;
+                            }
+
+                            .srch {
+                                font-family: Arial, sans-serif;
+                                font-size: 18px;
+                                width: 200px;
+                                height: 40px;
+                                background: transparent;
+                                margin-top: 13px;
+                                border-right: none;
+                                float: left;
+                                padding: 10px;
+                                border-bottom-left-radius: 5px;
+                                border-top-left-radius: 5px;
+                            }
+
+                            .btn {
+                                width: 20%;
+                                height: 40px;
+                                background: #ccc;
+                                border: 1px solid rgb(167, 164, 164);
+                                margin-top: 13px;
+                                color: black;
+                                font-size: 15px;
+                                border-bottom-right-radius: 10px;
+                                border-top-right-radius: 10px;
+                                transition: background-color 0.3s ease;
+                            }
+
+                            .btn:hover {
+                                background-color: #ccc;
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                .search {
+                                    float: none;
+                                    margin: 0 auto;
+                                }
+                            }
+
+                            .search {
+                                margin-top: -5px;
+                                margin-right: -15px;
+                            }
+                        </style>
+                        <!-- Lưu data product -->
+                        <script type="text/javascript">/*<![CDATA[*/$(document).ready(function () {
+                                                           nh_search_suggestion.init();
+                                                       });
+
+                        </script>
+                        <div class="login">
+                            <a href="login.html" class="muc3">Đăng nhập/Đăng kí</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="header-row-45" class="bg-menu  ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-3">
+                        <div data-aos="fade-right" class="navbar-header"> <a class="logo" href="#"><img
+                                    src="./img-2/logo-main.jpg" height="130" alt="Logo" /></a></div>
+                    </div>
+                    <!-- navbar-header   ở file boostrap-min.css -->
+                    <style>
+                        .logo {
+                            border-radius: 100px;
+                            margin-top: 50px;
+                        }
+                    </style>
+                    <style>
+                        .login {
+                            list-style: none;
+                            margin-top: 20px;
+                            display: flex;
+                            /* thêm thuộc tính display flex để canh chỉnh vị trí các phần tử bên trong */
+                            justify-content: flex-end;
+                            /* canh chỉnh phần tử con bên trong theo chiều ngang */
+                            align-items: center;
+                            /* canh chỉnh phần tử con bên trong theo chiều dọc */
+                        }
+
+                        .li {
+                            margin-left: 20px;
+                            /* khoảng cách giữa phần tử con bên trong */
+                        }
+
+                        .muc3 {
+                            text-decoration: none;
+                            color: #000;
+                            position: relative;
+                            /* thêm thuộc tính position để có thể sử dụng pseudo-element :before */
+                        }
+
+                        .muc3:before {
+                            content: "";
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                            width: 0%;
+                            height: 2px;
+                            background-color: #000;
+                            transition: all 0.3s ease-in-out;
+                            /* thêm hiệu ứng chuyển động khi rê chuột vào liên kết */
+                        }
+
+                        .muc3:hover:before {
+                            width: 100%;
+                            /* thêm chiều dài thanh trạng thái khi rê chuột vào liên kết */
+                        }
+                    </style>
+                    <!-- phần quan trọn : sử dụng file mega-menu2.css -->
+                    <div class="col-sm-9 col-xs-9">
+                        <div class="wsmenucontainer clearfix">
+                            <div class="overlapblackbg"></div>
+                            <div class="wsmobileheader clearfix"> <a id="wsnavtoggle"
+                                    class="animated-arrow"><span></span></a></div>
+                            <div class="wsmain  ">
+                                <nav class="wsmenu clearfix">
+                                    <ul class="mobile-sub wsmenu-list">
+                                        <li> <a class="navtext" href="index.html"> Trang chủ </a></li>
+                                        <li> <a class="navtext" href="GioiThieu.html"> Giới thiệu
+                                            </a></li>
+                                        <li> <a class="navtext" href="product.html"> Cửa hàng <i
+                                                    class="fa fa-angle-down" aria-hidden="true"></i> </a>
+                                            <div class="megamenu clearfix">
+                                                <ul class="wstliststy05">
+                                                    <li class="wstheading"> <a href="product.html">Giày Nam</a></li>
+                                                    <li> <a href="product.html"> Nam tính </a></li>
+                                                    <li> <a href="product.html"> Cá tính </a></li>
+                                                    <li> <a href="product.html"> Năng độngđộng </a></li>
+                                        </li>
+
+                                    </ul>
+                                    <ul class="wstliststy05">
+                                        <li class="wstheading"> <a href="/nu">Nữ</a></li>
+                                        <li> <a href="product.html"> Nữ Tính </a></li>
+                                        <li> <a href="product.html"> Đáng yêu </a></li>
+
+
+                                        <li> <a href="product.html"> Son phấn
+                                            </a></li>
+                                        </li>
+                                    </ul>
+
+                            </div>
+                            </li>
+                            <li> <a class="navtext" href="TinTuc.html"> Tin tức <i class="fa fa-angle-down"></i> </a>
+                                <ul class="wsmenu-submenu">
+                                    <li><a class="" href="GioiThieu">Tin khuyến
+                                            mãi</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li> <a class="navtext" href="LienHeHopTac.html"> Hợp Tác </a></li> -->
+                            <li> <a class="navtext" href="lienhe.html"> Liên hệ </a></li>
+                            </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main" class="nh-row">
+        <div id="content-row-13" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="title-main bottom clearfix">
+                            <div class="pull-left">
+                                <ol class="breadcrumb">
+                                    <li><a href="index.html">Trang chủ</a></li>
+                                    <li> <a href="product.html">Nữ</a></li>
+                                    <li> <a href="product.html">Giày đi bộ, chạy bộ
+                                            nữ</a></li>
+                                    <li class="active"> Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc</li>
+                                </ol>
+                            </div>
+                            <div class="pull-right hide">
+                                <h1>Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-row-38" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="product-detail">
+                            <div class="top-detail-product">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-6 col-xs-12">
+                                        <div class="box-slide-images-detail">
+                                            <div class="view-images-large">
+                                                <div id="main_img" class="light-gallery"> <a class="elevatezoom-gallery"
+                                                        data-image="https://fs-02.web4s.vn/uploads/plugin/product_items/153/giay-ch-y-n-li-ning-arhm008-8-h-a-ti-t-hoa-xanh-ng-c-13152329433118.jpg"
+                                                        href="#"
+                                                        data-zoom-image="https://fs-02.web4s.vn/uploads/plugin/product_items/153/giay-ch-y-n-li-ning-arhm008-8-h-a-ti-t-hoa-xanh-ng-c-13152329433118.jpg">
+                                                        <img title="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                            alt="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                            id="img-main-detail" class="img-main-detail"
+                                                            src="https://fs-02.web4s.vn/uploads/plugin/product_items/153/giay-ch-y-n-li-ning-arhm008-8-h-a-ti-t-hoa-xanh-ng-c-13152329433118.jpg">
+                                                    </a><a
+                                                        href="#"
+                                                        class="hidden"> <img
+                                                            title="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                            alt="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                            src="uploads/plugin/product_items/153/giay-ch-y-n-li-ning-arhm008-8-h-a-ti-t-hoa-xanh-ng-c-13152334774302.jpg">
+                                                    </a> <a
+                                                        href="#"
+                                                        class="hidden"> <img
+                                                            title="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                            alt="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                            src="uploads/plugin/product_items/153/giay-ch-y-n-li-ning-arhm008-8-h-a-ti-t-hoa-xanh-ng-c-13152344637470.jpg">
+                                                    </a> <a
+                                                        href="#"
+                                                        class="hidden"> <img
+                                                            title="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                            alt="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                            src="uploads/plugin/product_items/153/giay-ch-y-n-li-ning-arhm008-8-h-a-ti-t-hoa-xanh-ng-c-13153626652702.jpg">
+                                                    </a></div>
+                                            </div>
+                                            <div class="thub-image">
+                                                <div class="slider-thumb owl-carousel owl-theme"
+                                                    style="opacity: 1; display: block;">
+                                                    <div class="owl-wrapper-outer">
+                                                        <div class="owl-wrapper"
+                                                            style="width: 1200px; left: 0px; display: block;">
+                                                            <div class="owl-item" style="width: 150px;">
+                                                                <div class="item active "
+                                                                    data-original="uploads/plugin/product_items/153/giay-ch-y-n-li-ning-arhm008-8-h-a-ti-t-hoa-xanh-ng-c-13152329433118.jpg"
+                                                                    item-id=""> <img
+                                                                        title="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                                        alt="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                                        src="./img-2/product-16.jpg"
+                                                                        class="img-thumb-product"></div>
+                                                            </div>
+                                                            <div class="owl-item" style="width: 150px;">
+                                                                <div class="item "
+                                                                    data-original="uploads/plugin/product_items/153/giay-ch-y-n-li-ning-arhm008-8-h-a-ti-t-hoa-xanh-ng-c-13152334774302.jpg"
+                                                                    item-id=""> <img
+                                                                        title="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                                        alt="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                                        src="./img-2/product-16.jpg"
+                                                                        class="img-thumb-product"></div>
+                                                            </div>
+                                                            <div class="owl-item" style="width: 150px;">
+                                                                <div class="item "
+                                                                    data-original="uploads/plugin/product_items/153/giay-ch-y-n-li-ning-arhm008-8-h-a-ti-t-hoa-xanh-ng-c-13152344637470.jpg"
+                                                                    item-id=""> <img
+                                                                        title="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                                        alt="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                                        src="./img-2/product-16.jpg"
+                                                                        class="img-thumb-product"></div>
+                                                            </div>
+                                                            <div class="owl-item" style="width: 150px;">
+                                                                <div class="item "
+                                                                    data-original="uploads/plugin/product_items/153/giay-ch-y-n-li-ning-arhm008-8-h-a-ti-t-hoa-xanh-ng-c-13153626652702.jpg"
+                                                                    item-id=""> <img
+                                                                        title="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                                        alt="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc"
+                                                                        src="./img-2/product-16.jpg"
+                                                                        class="img-thumb-product"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="owl-controls clickable">
+                                                        <div class="owl-buttons">
+                                                            <div class="owl-prev">prev</div>
+                                                            <div class="owl-next">next</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <script type="text/javascript">$(document).ready(function () {
+                                                if ("1" == "1") {
+                                                    function actionZoomImage() {
+                                                        if ($('.elevatezoom-gallery').length > 0) {
+                                                            // Zoom Type window
+                                                            //  main_image.elevateZoom({
+                                                            //      gallery: 'thumbs',
+                                                            //      cursor: 'pointer',
+                                                            //      imageCrossfade: true,
+                                                            //      zoomType: 'window',
+                                                            //      scrollZoom: true,
+                                                            //      zoomWindowHeight: width,
+                                                            //      zoomWindowWidth: width
+                                                            //  });
+                                                            // // Zoom Type lens
+                                                            // main_image.elevateZoom({
+                                                            //     gallery: 'thumbs',
+                                                            //     cursor: 'pointer',
+                                                            //     imageCrossfade: true,
+                                                            //     scrollZoom: true,
+                                                            //     zoomType: "lens",
+                                                            //     lensShape: "round",
+                                                            //     lensSize: 250,
+                                                            //     containLensZoom: true,
+                                                            // });
+
+                                                            // Zoom Type inner
+                                                            main_image.elevateZoom({
+                                                                zoomType: "inner",
+                                                                cursor: "crosshair"
+                                                            });
+                                                        }
+                                                    }
+                                                }
+
+                                                var main_image = $('.img-main-detail');
+                                                var elevatezoom_gallery = $('.elevatezoom-gallery');
+                                                if ("1" == "1") {
+                                                    actionZoomImage();
+                                                }
+                                                // event click select thumb item
+                                                $(document).on('click', '.slider-thumb .item', function (e) {
+                                                    main_image.attr('src', $(this).attr('data-original'));
+                                                    elevatezoom_gallery.attr('data-zoom-image', $(this).attr('data-original'));
+                                                    elevatezoom_gallery.attr('data-image', $(this).attr('data-original'));
+                                                    if ("1" == "1") {
+                                                        actionZoomImage();
+                                                    }
+                                                });
+
+                                                //event mouseover and mouseout thumb item
+                                                $(document).on('mouseover', '.slider-thumb .item', function (e) {
+                                                    main_image.attr('src', $(this).attr('data-original'));
+                                                    elevatezoom_gallery.attr('data-zoom-image', $(this).attr('data-original'));
+                                                    elevatezoom_gallery.attr('data-image', $(this).attr('data-original'));
+
+                                                }).on('mouseout', '.slider-thumb .item', function (e) {
+                                                    main_image.attr('src', $('.slider-thumb .item.active').attr('data-original'));
+                                                });
+
+                                            });</script>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6 col-xs-12">
+                                        <h1 class="title-name-product"> Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh
+                                            ngọc (Xốp, Trung Quốc)</h1>
+                                        <ul class="a-row row-bb">
+                                            <li> <label> Mã sản phẩm: </label> <span class="selection">NH_00353</span>
+                                            </li>
+                                            <li> <label> Thương hiệu: </label> <span class="selection"><a
+                                                        href="#">Li-ning</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="price-detail-page"> <span class="lb-price price-main"> 1,690,000
+                                            </span> <span class="dvt"> ₫ </span> <span class="tag-discount "
+                                                style="margin-left: 20px;"> Giảm giá
+                                                6 % </span>
+                                            <div class="clearfix"></div> <span class="lb-price-sale price-before ">
+                                                1,790,000
+                                                ₫ </span>
+                                        </div>
+                                        <div class="description-product-detail col-xs-12">
+                                            <p>Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc được làm từ chất
+                                                liệu mặt giày siêu nhẹ, thông thoáng. Thiết kế đế êm ái cùng kiểu dáng
+                                                ôm sát bàn chân đặc biệt phù hợp với môn thể thao chạy bộ, đi bộ.</p>
+                                            <ul>
+                                                <li>Được làm từ vải dệt&nbsp;thể thao cao cấp</li>
+                                                <li>Thiết kế cổ ngắn, dáng thể thao khỏe khoắn</li>
+                                                <li>Đệm lót trong êm ái</li>
+                                                <li>Đế xốp với chức năng giảm chấn cao</li>
+                                                <li>Xuất xứ: Trung Quốc</li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-available col-xs-12">
+                                            <div class="group-available col-xs-12 noPadding">
+                                                <div class="a-row"> <label> Chất liệu đế: </label> <span
+                                                        class="selection"> Xốp </span></div>
+                                            </div>
+                                            <div class="group-available col-xs-12 noPadding">
+                                                <div class="a-row"> <label> Màu sắc: </label> <span class="selection">
+                                                    </span></div>
+                                            </div>
+                                            <div class="group-available col-xs-12 noPadding">
+                                                <div class="a-row"> <label> Xuất xứ: </label> <span class="selection">
+                                                        Trung Quốc </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 btn-muahang">
+                                            <div class="input-group"><span class="input-group-btn"><button type="button"
+                                                        class="btn btn-default">-</button></span><input
+                                                    name="number_available" class="form-control num-quantity input-lg"
+                                                    type="text" value="1" min="1" placeholder="Số lượng"
+                                                    style="text-align: center; min-width: 55px;"><span
+                                                    class="input-group-btn"><button type="button"
+                                                        class="btn btn-default">+</button></span></div><a
+                                                class="btn btn-default btn-cart btn-pay btn-add-cart-two" item-id="195">
+                                                <i class="icon icon-cart" aria-hidden="true"></i> Thêm vào giỏ hàng
+                                            </a><a class="btn btn-default btn-compare" product-id="153"> <i
+                                                    class="icon icon-arrows-ccw"></i> </a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <script type="text/javascript">$(document).ready(function () {
+                                        $('.light-gallery').lightGallery({
+                                            pager: true
+                                        });
+                                    });
+
+                                    $('.num-quantity').bootstrapNumber();
+
+                                    // slider thumb
+                                    $(".slider-thumb").owlCarousel({
+                                        itemsCustom: [
+                                            [0, 2],
+                                            [480, 3],
+                                            [500, 3],
+                                            [992, 3],
+                                            [1024, 5],
+                                        ],
+                                        navigation: true,
+                                        pagination: false,
+                                        autoPlay: false,
+                                    });
+
+                                    var boxes = [];
+                                    var arr_social = { "facebook_share": 1, "google_share": 1, "twitter_share": 1, "linkedin_share": 1, "tumblr_share": 1 };
+                                    if (typeof arr_social != 'undefined') {
+                                        if (arr_social['facebook_share'] == 1) {
+                                            boxes.push('facebook');
+                                        }
+                                        if (arr_social['google_share'] == 1) {
+                                            boxes.push('googleplus');
+                                        }
+                                        if (arr_social['twitter_share'] == 1) {
+                                            boxes.push('twitter');
+                                        }
+                                        if (arr_social['linkedin_share'] == 1) {
+                                            boxes.push('linkedin');
+                                        }
+                                        if (arr_social['tumblr_share'] == 1) {
+                                            boxes.push('pinterest');
+                                        }
+                                    }
+                                    // soical share
+                                    $("#share-icon").jsSocials({
+                                        showLabel: false,
+                                        showCount: false,
+                                        //                shares: ["facebook", "googleplus", "twitter", "linkedin", "pinterest"]
+                                        shares: boxes,
+                                    });</script>
+                            </div>
+                            <script type="text/javascript">//document ready
+                                $(document).ready(function () {
+                                    nh_product_detail.init();
+                                });</script>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12 bottom-detail-product">
+                                    <ul class="nav_title clearfix">
+                                        <li class="active"> <a data-toggle="tab" href="#content">Mô tả</a></li>
+                                        <li> <a data-toggle="tab" href="#highlight">Điểm nổi bật</a></li>
+                                        <li class="dropdown responsivetabs-more"><a href="#" class="dropdown-toggle"
+                                                data-toggle="dropdown"><i class="icon  icon-menu"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li> <a data-toggle="tab" href="#condition">Điều kiện</a></li>
+                                                <li> <a data-toggle="tab" href="#comment">Bình luận</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="content" class="tab-pane fade in active">
+                                            <p>Giày chạy Li-ning được làm từ vải lưới thể thao mềm mại, thông thoáng
+                                                giúp bàn chân luôn được "thở" và không khí bên trong giày được lưu thông
+                                                liên tục. Thiết kế đế và đệm lót êm ái, giúp hấp thụ và phân tán áp lực,
+                                                hỗ trợ mọi bước chạy được nhẹ nhàng và ổn định.</p>
+                                            <p><strong>Hướng dẫn bảo quản</strong></p>
+                                            <ul>
+                                                <li>Lau hoặc giặt sạch vết bẩn với nước</li>
+                                                <li>Không giặt máy, không dùng thuốc tẩy</li>
+                                                <li>Không phơi sản phẩm nơi ánh nắng gắt</li>
+                                                <li>Để sản phẩm nơi khô ráo khi không sử dụng</li>
+                                            </ul>
+                                            <p><strong>Thông tin thương hiệu</strong><br>Năm 1990, tập đoàn sản xuất
+                                                dụng cụ thể thao Li-Ning Sports được thành lập bởi Li Ning - một trong
+                                                những vận động viên xuất sắc nhất thế kỷ 20. Chưa đầy 20 năm sau, thương
+                                                hiệu này đã nằm trong top những hãng thời trang thể thao hàng đầu thế
+                                                giới. Hiện nay, với nỗ lực sáng tạo và đổi mới, Li-Ning điều hành
+                                                một&nbsp;“Trung tâm sáng tạo toàn cầu”&nbsp;tại Hongkong, là trung tâm
+                                                thiết kế sản phẩm lớn nhất tại Châu Á nơi tập trung hàng trăm nhà thiết
+                                                kế chuyên nghiệp đến từ Italia, Tây Ban Nha, Mỹ… Với khẩu
+                                                hiệu&nbsp;“Make the change”, Li-Ning tự tin mang đến những sản phẩm ưu
+                                                việt, thiết kế phong cách phù hợp từng môn thể thao và hoàn cảnh sử
+                                                dụng.&nbsp;</p>
+                                        </div>
+                                        <div id="highlight" class="tab-pane fade"> </div>
+                                        <div id="condition" class="tab-pane fade"> </div>
+                                        <div id="comment" class="tab-pane fade">
+                                            <h4 class="title-menu-ft">Bình luận</h4>
+                                            <div id="comment-product" class="nh-comment">
+                                                <div class="enter-comment">
+                                                    <div class="input-comment">
+                                                        <div class="wrap-input">
+                                                            <div id="my-comment" class="my-comment" name="my_comment"
+                                                                contenteditable="true"></div>
+                                                            <div class="comment-attach"> <input type="file"
+                                                                    accept="image/*" name="comment_photo[]"
+                                                                    class="input-photo-comment"> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hidden-element-comment"></div>
+                                            </div>
+                                            <link type="text/css" rel="stylesheet"
+                                                href="../../../template/fs-02/webroot/../Plugin/Comments/webroot/css/comments.css">
+                                            <script type="text/javascript"
+                                                src="../../../template/fs-02/webroot/../Plugin/Comments/webroot/js/comments.js"></script>
+                                            <script type="text/javascript">//document ready
+                                                $(document).ready(function () {
+                                                    // config plugin comment
+                                                    nh_comments.init({
+                                                        object: '#comment-product',
+                                                        type: 'products',
+                                                        awaiting_approval: parseInt("0"),
+                                                        login_require: parseInt("0"),
+                                                        time_reload: parseInt("600000"),
+                                                        show_notice_success: parseInt("0"),
+                                                        show_avatar: parseInt("0"),
+                                                        accept_emoticon: parseInt("0"),
+                                                        accept_photo: parseInt("0"),
+                                                        accept_like: parseInt("0"),
+                                                        accept_comment: parseInt("0"),
+
+                                                        foreign_id: parseInt("153"),
+                                                        limit: parseInt("5"),
+
+                                                        logged: parseInt("0"),
+                                                        member_id: parseInt("0"),
+                                                        full_name: "",
+                                                        phone: "",
+                                                        email: "",
+                                                        avatar: "",
+                                                    });
+                                                });</script>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                               
+                            </div>
+                            <div class="col-md-12 no-padding"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="footer" class="nh-row">
+
+        <!--   _________ -->
+
+        <div id="footer-row-24" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="navbar-header"> <a class="logo" href="#"> <img style="boder:none;"
+                                    data-aos="fade-right" src="./img-2/logo-main.jpg" width="140" width="100"
+                                    height="100" alt="Logo" style="border-radius: 10px;;"> </a>
+                        </div>
+                        <div class="item_block clearfix" style="" data-action="footer/FooterBlock/footerAddress/58">
+                            <div class="address-footer menu-footer-vertical  box-ft  ">
+                                <h4 class="title-menu-ft" data-aos="fade-up">VỀ CHÚNG TÔI</h4>
+                                <p class="about-desc"></p>
+                                <div class="address-ft">
+                                    <p><i class="demo-icon color-main icon-fax"></i>6868686868</p>
+                                    <p><i class="demo-icon color-main icon-phone"></i>0354781332</p>
+                                    <p><i class="demo-icon color-main icon-mail-alt"></i>tytytititity@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="menu-footer-vertical  box-ft ">
+                            <h4 class="title-menu-ft">Giay the thao</h4>
+
+                            <div class="list-menu-fy" style="padding-bottom: 10px;">
+                                <p>active</p>
+                                <p>Fire supper hot</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item_block clearfix" style="" data-action="main_menu/MainMenuBlock/menuBlock/63">
+                            <div class="menu-footer-vertical  box-ft  menu-ft ">
+                                <h4 class="title-menu-ft">Thông tin</h4>
+                                <div class="list-menu-fy">
+                                    <a href="GioiThieu.html">
+                                        Về Chúng Tôi </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tuyển Dụng </a><br>
+                                    <a href="GioiThieu.html">
+                                        Liên hệ </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tin tức </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tài liệu </a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item_block clearfix" style="" data-action="main_menu/MainMenuBlock/menuBlock/61">
+                            <div class="menu-footer-vertical  box-ft  menu-ft ">
+                                <h4 class="title-menu-ft">Câu hỏi thường gặp</h4>
+                                <div class="list-menu-fy">
+                                    <a href="#">
+                                        Chương trình ưu đãi </a><br>
+                                    <a href="#">
+                                        Chất lượng sản phẩm </a><br>
+                                    <a href="#">
+                                        Những vấn đề phát sinh </a><br>
+                                    <a href="#">
+                                        Lần đầu tiên đặt hàng </a><br>
+                                    <a href="#">
+                                        Sản phẩm </a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- _______________ -->
+
+        <!-- footer row 46 -->
+        <div id="footer-row-46" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end 46 -->
+        <div id="footer-row-51" class="nh-row  bottom-footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="item_block clearfix" style="" data-action="footer/FooterBlock/footerCopyright/9">
+                            <div class="bottom-footer  ">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-8 col-xs-12">
+                                            <p class="coppyright">ThanhDev-BabyShop kính chào</p>
+                                        </div>
+                                        <div class="col-sm-4 col-sm-4 col-xs-12">
+                                            <div class="payment-support">
+                                                <img src="./img/end-logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/loadCart.js"></script>
+    <script>
+        setCartStorage()
+        //lắng nghe sự kiện lấy sản phẩm 
+        addListenerEvent()
+    </script>
+ 
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="vie">
+
+<head>
+    <link href="/uploads/plugin/setting/3/giay-th-thao-04-logo.png" type="image/x-icon" rel="icon" />
+    <link href="/uploads/plugin/setting/3/giay-th-thao-04-logo.png" type="image/x-icon" rel="shortcut icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Giày thể thao</title>
+    <meta http-equiv="content-language" content="vie" />
+    <!-- <meta property="og:url" content="https://fs-02.web4s.vn/" /> -->
+    <meta property="og:title" content="Giày thể thao" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="./img./logo-edit2.jpg" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link rel="stylesheet" type="text/css" href="./css/boostrap-min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-chosen.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mega-menu2.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleMenu.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fs-02.web4s.vn/template/fs-02/webroot/assets/css/fonts_vnsitecss.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://fs-02.web4s.vn/template/fs-02/webroot/css/style-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fs-02.web4s.vn/template/fs-02/webroot/assets/css/fontello.css" />
+    <link rel="stylesheet" type="text/css" href="./css/page.css" />
+
+    <!-- js -->
+    <script type="text/javascript" src="./js/jquery2-1-1.js"></script>
+    <!-- boostrap ảnh hưởng tới product  danh mục -->
+    <script type="text/javascript" src="./js/boostrap-min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107079686-1"></script>
+ 
+</head>
+
+<body>
+    <!-- ảnh hưởng style file boostrap-min.css -->
+
+
+
+
+    <div id="main" class="nh-row">
+        <div id="order-info">
+            <div class="full-width">
+                <div class="title-main bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div class="pull-left">
+                                    <ol class="breadcrumb">
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li class="active"> Thông tin đơn hàng</li>
+                                    </ol>
+                                </div>
+                                <div class="pull-right hide"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-step">
+                <div class="container">
+                    <div class="col-xs-12  text-center">
+                        <div class="box-step">
+                            <ul class="clearfix row" id="myTabs" role="tablist">
+                                <li class="col-sm-4 col-xs-12 step1 active"> <a href="javascript://"> <span
+                                            class="num-of-step">1</span> <span>Thông tin đơn hàng</span> </a></li>
+                                <li class="col-sm-4 col-xs-12 step2"> <a href="javascript://"> <span
+                                            class="num-of-step">2</span> <span>Hình thức thanh toán</span> </a></li>
+                                <li class="col-sm-4 col-xs-12 step3"> <a href="javascript://"> <span
+                                            class="num-of-step">3</span> <span>Hoàn thành</span> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="box-payment bottom">
+                    <div class="row">
+                        <form id="frm-order" method="POST" action="" novalidate="novalidate">
+                            <div class="col-md-8 col-sm-7 col-xs-12 box-cart-left">
+                                <div class="card bg-cart">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"> <a href="#diachi-giaohang"
+                                                aria-controls="diachi-giaohang" role="tab" data-toggle="tab"> Địa chỉ
+                                                giao hàng </a></li>
+                                        <li role="presentation"> <a href="#login-cart" aria-controls="login-cart"
+                                                role="tab" data-toggle="tab"> Đăng nhập </a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="diachi-giaohang">
+                                            <div id="shipping-addresses" class="list-shipping-address row">
+                                                <div class="col-xs-12 hidden "> <label
+                                                        class="address-option add-address  active"> <input
+                                                            name="shipping_address" value="add_shipping"
+                                                            class="input-address hidden" type="radio" checked=""> <i
+                                                            class="fa fa-plus-circle" aria-hidden="true"></i> Thêm địa
+                                                        chỉ giao hàng </label></div>
+                                            </div>
+                                            <div id="form-add-address" class="row ">
+                                                <div class="col-md-6  col-xs-12">
+                                                    <div class="form-group"> <label class="hidden">Họ và tên</label>
+                                                        <input class="form-control" name="full_name"
+                                                            placeholder="Họ và tên" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="form-group"> <label class="hidden">Số điện thoại</label>
+                                                        <input class="form-control" name="phone"
+                                                            placeholder="Số điện thoại" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="form-group"> <label class="hidden">Email</label> <input
+                                                            class="form-control" name="email" placeholder="Email"
+                                                            value=""></div>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="form-group"> <select name="city_id"
+                                                            class="chosen-select form-control required" id="city_id"
+                                                            aria-required="true">
+                                                            <option value="">-- Tỉnh thành --</option>
+                                                            <option value="1">Hà Nội</option>
+                                                            <option value="2">Hà Giang</option>
+                                                            <option value="4">Cao Bằng</option>
+                                                            <option value="6">Bắc Kạn</option>
+                                                            <option value="8">Tuyên Quang</option>
+                                                            <option value="10">Lào Cai</option>
+                                                            <option value="11">Điện Biên</option>
+                                                            <option value="12">Lai Châu</option>
+                                                            <option value="14">Sơn La</option>
+                                                            <option value="15">Yên Bái</option>
+                                                            <option value="17">Hòa Bình</option>
+                                                            <option value="19">Thái Nguyên</option>
+                                                            <option value="20">Lạng Sơn</option>
+                                                            <option value="22">Quảng Ninh</option>
+                                                            <option value="24">Bắc Giang</option>
+                                                            <option value="25">Phú Thọ</option>
+                                                            <option value="26">Vĩnh Phúc</option>
+                                                            <option value="27">Bắc Ninh</option>
+                                                            <option value="30">Hải Dương</option>
+                                                            <option value="31">Hải Phòng</option>
+                                                            <option value="33">Hưng Yên</option>
+                                                            <option value="34">Thái Bình</option>
+                                                            <option value="35">Hà Nam</option>
+                                                            <option value="36">Nam Định</option>
+                                                            <option value="37">Ninh Bình</option>
+                                                            <option value="38">Thanh Hóa</option>
+                                                            <option value="40">Nghệ An</option>
+                                                            <option value="42">Hà Tĩnh</option>
+                                                            <option value="44">Quảng Bình</option>
+                                                            <option value="45">Quảng Trị</option>
+                                                            <option value="46">Thừa Thiên Huế</option>
+                                                            <option value="48">Đà Nẵng</option>
+                                                            <option value="49">Quảng Nam</option>
+                                                            <option value="51">Quảng Ngãi</option>
+                                                            <option value="52">Bình Định</option>
+                                                            <option value="54">Phú Yên</option>
+                                                            <option value="56">Khánh Hòa</option>
+                                                            <option value="58">Ninh Thuận</option>
+                                                            <option value="60">Bình Thuận</option>
+                                                            <option value="62">Kon Tum</option>
+                                                            <option value="64">Gia Lai</option>
+                                                            <option value="66">Đắk Lắk</option>
+                                                            <option value="67">Đắk Nông</option>
+                                                            <option value="68">Lâm Đồng</option>
+                                                            <option value="70">Bình Phước</option>
+                                                            <option value="72">Tây Ninh</option>
+                                                            <option value="74">Bình Dương</option>
+                                                            <option value="75">Đồng Nai</option>
+                                                            <option value="77">Bà Rịa - Vũng Tàu</option>
+                                                            <option value="79">Hồ Chí Minh</option>
+                                                            <option value="80">Long An</option>
+                                                            <option value="82">Tiền Giang</option>
+                                                            <option value="83">Bến Tre</option>
+                                                            <option value="84">Trà Vinh</option>
+                                                            <option value="86">Vĩnh Long</option>
+                                                            <option value="87">Đồng Tháp</option>
+                                                            <option value="89">An Giang</option>
+                                                            <option value="91">Kiên Giang</option>
+                                                            <option value="92">Cần Thơ</option>
+                                                            <option value="93">Hậu Giang</option>
+                                                            <option value="94">Sóc Trăng</option>
+                                                            <option value="95">Bạc Liêu</option>
+                                                            <option value="96">Cà Mau</option>
+                                                        </select></div> <input type="hidden" id="country_id"
+                                                        name="country_id" value="1">
+                                                </div>
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="form-group"> <select name="district_id"
+                                                            class="chosen-select form-control required" >
+                                                            <option value="">-- Quận huyện --</option>
+                                                        </select></div>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="form-group"> <select name="ward_id"
+                                                            class="chosen-select form-control" id="ward_id">
+                                                            <option value="">-- Phường xã --</option>
+                                                        </select></div>
+                                                </div>
+                                                <div class="col-md-12 col-xs-12">
+                                                    <div class="form-group"> <label class="hidden">Địa chỉ</label>
+                                                        <input class="form-control" name="address" placeholder="Địa chỉ"
+                                                            value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12  col-xs-12">
+                                                    <div class="form-group"> <label class="hidden">Ghi
+                                                            chú</label><textarea class="form-control" name="note"
+                                                            placeholder="Ghi chú"></textarea></div>
+                                                </div>
+                                            </div>
+                                            <div class="button-cart text-right"> <button id="btn-process-payment"
+                                                    type="button" class="btn-continue-pay btn btn-main txt-upper">
+                                                    &nbsp;
+                                                    Tiếp tục Thanh toán <i class="fa fa-arrow-right"
+                                                        aria-hidden="true"></i> </button></div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="login-cart">
+                                            <div class="col-md-6 col-md-offset-3 col-xs-12 cart-right">
+                                                <div class="form-group"> <label class="hidden">Tên đăng nhập</label>
+                                                    <input class="form-control" name="username" type="text"
+                                                        placeholder="Tên đăng nhập hoặc email">
+                                                </div>
+                                                <div class="form-group"> <label class="hidden">Mật khẩu</label> <input
+                                                        class="form-control" name="password" type="password"
+                                                        placeholder="Mật khẩu"></div>
+                                                <div class="form-group text-center"> <button type="button"
+                                                        id="btn-login-order" class="btn-login bt btn-primary"> <span
+                                                            class="fa fa-sign-in"></span> Đăng nhập </button></div>
+                                                <div class="form-group text-center"> <span class="txt-upper"> Hoặc
+                                                    </span></div>
+                                                <div class="form-group"> <span id="login-facebook"
+                                                        onclick="nh_member.FB_login($('#login-modal'),'popup');"
+                                                        style="color: #fff"
+                                                        class="btn btn-block btn-social btn-facebook"> <span
+                                                            class="fa fa-facebook"></span> Đăng nhập bằng facebook
+                                                    </span></div>
+                                                <div class="form-group"> <span id="login-google"
+                                                        onclick="nh_member.GOOGLE_login($('#login-modal'),'popup');"
+                                                        style="color: #fff" class="btn btn-block btn-social btn-google">
+                                                        <span class="fa fa-google"></span> Đăng nhập bằng google </span>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-5 col-xs-12">
+                                <div class="box-cart-right clearfix">
+                                    <div class="title_style4">
+                                        <h3>Thông tin đơn hàng</h3>
+                                    </div>
+                                    <div class="box-cart-right-cont">
+                                        <div class="text-center padding-b-10">
+                                            <!-- Đoạn mã HTML chứa thông tin giỏ hàng -->
+                                            <div class="shoppingcart-box" style="margin-left:0;">
+                                                <div class="scrollbar" id="style-3">
+                                                    <ul class="list clearfix force-overflow">
+                                                        <li class="item">
+                                                            <small class="text-center">Không có sản phẩm nào trong giỏ hàng</small>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                               
+                                            </div>
+                                            <!-- Kết thúc đoạn mã HTML chứa thông tin giỏ hàng -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .scrollbar {
+    float: left;
+    max-height:500px ;
+    width: 100%;
+    overflow-y: auto;
+    
+}
+                .box-cart-right-cont {
+                    background-color: #f5f5f5;
+                }
+
+                .product-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .product-item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+
+                .product-image {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+
+                .product-name {
+                    font-weight: bold;
+                }
+
+                .product-price {
+                    margin-top: 5px;
+                }
+            </style>
+          
+        </div>
+    </div>
+
+
+   
+    <div id="footer" class="nh-row">
+
+        <!--   _________ -->
+
+        <div id="footer-row-24" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="navbar-header"> <a class="logo" href="#"> <img src="./img-2/logo-main.jpg"
+                                    width="100" height="100" alt="Logo" style="border-radius: 10px;;"> </a></div>
+                        <div class="item_block clearfix" style="" data-action="footer/FooterBlock/footerAddress/58">
+                            <div class="address-footer menu-footer-vertical  box-ft  ">
+                                <h4 class="title-menu-ft">VỀ CHÚNG TÔI</h4>
+                                <p class="about-desc"></p>
+                                <div class="address-ft">
+                                    <p><i class="demo-icon color-main icon-fax"></i>Thể thao mãnh liệt </p>
+                                    <p><i class="demo-icon color-main icon-phone"></i>0354781332</p>
+                                    <p><i class="demo-icon color-main icon-mail-alt"></i>tytytititity@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="menu-footer-vertical  box-ft ">
+                            <h4 class="title-menu-ft">Comment facebook</h4>
+                            <div class="list-menu-fy" style="padding-bottom: 10px;">
+                                <div id="fb-root" class=" fb_reset">
+                                    <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+                                        <div></div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item_block clearfix" style="" data-action="main_menu/MainMenuBlock/menuBlock/63">
+                            <div class="menu-footer-vertical  box-ft  menu-ft ">
+                                <h4 class="title-menu-ft">Thông tin</h4>
+                                <div class="list-menu-fy">
+                                    <a href="GioiThieu.html">
+                                        Về Chúng Tôi </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tuyển Dụng </a><br>
+                                    <a href="GioiThieu.html">
+                                        Liên hệ </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tin tức </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tài liệu </a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item_block clearfix" style="" data-action="main_menu/MainMenuBlock/menuBlock/61">
+                            <div class="menu-footer-vertical  box-ft  menu-ft ">
+                                <h4 class="title-menu-ft">Câu hỏi thường gặp</h4>
+
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- _______________ -->
+
+        <!-- footer row 46 -->
+        <div id="footer-row-46" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end 46 -->
+        <div id="footer-row-51" class="nh-row  bottom-footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="item_block clearfix" style="" data-action="footer/FooterBlock/footerCopyright/9">
+                            <div class="bottom-footer  ">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-8 col-xs-12">
+                                            <p class="coppyright">ThanhDev-BabyShop kính chào</p>
+                                        </div>
+                                        <div class="col-sm-4 col-sm-4 col-xs-12">
+                                            <div class="payment-support">
+                                                <img src="./img/end-logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    
+    const continueButton = document.getElementById('btn-process-payment');
+
+continueButton.addEventListener('click', function(event) {
+  event.preventDefault(); // Ngăn chặn hành vi mặc định của nút submit
+  
+  // Hiển thị thông báo mua thành công
+  alert('Mua thành công');
+
+  // Tải lại trang sang index.html
+  window.location.href = 'index.html'; // Thay thế 'index.html' bằng URL thực tế của trang index
+  
+});
+
+        
+        
+        </script>
+         <script src="./js/loadCart.js">
+
+
+         </script>
+       <!-- <script src="./js/loadCart-xuly-muahang.js">
+
+
+       </script> -->
+       <script src="./js/loadCart-xuly-muahang.js"></script>
+      
+</body>
+
+</html>

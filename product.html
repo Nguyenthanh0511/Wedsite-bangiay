@@ -1,0 +1,1056 @@
+<!-- file chính -->
+<!DOCTYPE html>
+<html lang="vie">
+
+<head>
+    <title> Giày thể thao</title>
+    <meta http-equiv="content-language" content="vie" />
+    <meta property="og:title" content="Giày thể thao" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="./img./logo-edit2.jpg" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link rel="stylesheet" type="text/css" href="./css/boostrap-min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-chosen.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mega-menu.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleMenu.css" />
+    <link rel="stylesheet" type="text/css"href="https://fs-02.web4s.vn/template/fs-02/webroot/assets/css/fonts_vnsitecss.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://fs-02.web4s.vn/template/fs-02/webroot/css/style-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="https://fs-02.web4s.vn/template/fs-02/webroot/assets/css/fontello.css" />
+    <link rel="stylesheet" type="text/css" href="./css/page.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- js -->
+    <script type="text/javascript" src="./js/jquery2-1-1.js"></script>
+    <!-- boostrap ảnh hưởng tới product  danh mục -->
+    <script type="text/javascript" src="./js/boostrap-min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107079686-1"></script>
+    <!--  -->
+</head>
+
+<body>
+    <!-- ảnh hưởng style file boostrap-min.css -->
+    <div id="header" class="nh-row">
+        <div id="header-row-20" class="nh-row">
+            <div class="container">
+
+                <div class="row">
+                    <div data-aos="fade-right" class="col-sm-3 col-xs-3">
+                    </div>
+                    <div class="col-sm-5 col-xs-5">
+                        <div class="box-right">
+                            <div class="item-language item-dropdown Foatleft item-inline dropdown"> <a href="#"
+                                    class=""> <span class="icon-flag icon-flag-vi hide">&nbsp;</span> <span
+                                        class="icon_img"> <img width="16px" src="./img/logoVietNam.png"> </span>
+                                    Viêt nam <span class="fa fa-angle-down"></span> </a>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Số điện thoại header -->
+                        <p class="phone-number hidden-xs"> Điện thoại : 0354781332</p>
+                    </div>
+                    <!-- Giỏi hàng -->
+                    <div class="col-sm-4 col-xs-4">
+                        <!-- định nghĩa nav-right là khối to chưa giỏ hàng -->
+                        <div  class="nav-right ">
+                            <!-- boostrap cart located atm ain.css  lines 300
+                            -->
+                            <div class="mini-cart-order cart-order item-dropdown Foatright item-inline dropdown"> <a
+                                    href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"> <i
+                                        class="icon icon-cart"></i> <span class="number">0</span> </a>
+                                <div class="dropdown-menu pull-right" role="menu" aria-labelledby="drop61">
+                                    <div class="shoppingcart-box">
+                                        <div class="scrollbar" id="style-3">
+                                            <ul class="list clearfix force-overflow">
+                                                <li class="item"> <small class="text-center">Không có sản phẩm nào trong
+                                                        giỏ hàng</small></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="warp-loading-block hidden">
+                                            <div class="warp-bg"></div>
+                                        </div>
+                                    </div>
+                                    <!-- CART SẢN PHẨM -->
+
+                                    <!-- cart 2 -->
+
+                                    <!--  -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Nhớ sửa thanh search -->
+                        <div class="search">
+                            <input data-aos="fade-right" class="srch" type="search" name=""
+                                placeholder="Bạn cần tìm gì?">
+                            <a href="#"> <button data-aos="fade-left" class="btn">Search</button></a>
+                        </div>
+                        <style>
+                            body>* {
+                                max-width: 100%;
+                                max-height: 100%;
+                                overflow: hidden;
+                            }
+
+                            body>*>* {
+                                max-width: 100%;
+                            }
+
+
+
+                            /* Ẩn thanh trượt trên tất cả các phần tử */
+                            /* ::-webkit-scrollbar {
+  display: none;
+} */
+
+                            .nav-right .item-dropdown {
+                                margin: 5;
+                                margin-top: 15px;
+                                padding: 0;
+                            }
+
+                            i.icon.icon-cart {
+                                margin: 3;
+                            }
+
+                            .item-language.item-dropdown.Foatleft.item-inline.dropdown {
+                                margin-left: 10px;
+                                margin-top: 14px;
+                            }
+
+                            .search {
+                                width: 330px;
+                                float: left;
+                                margin-left: -160px;
+                                margin-top: 20px;
+                            }
+
+                            .srch {
+                                font-family: Arial, sans-serif;
+                                font-size: 18px;
+                                width: 200px;
+                                height: 40px;
+                                background: transparent;
+                                margin-top: 13px;
+                                border-right: none;
+                                float: left;
+                                padding: 10px;
+                                border-bottom-left-radius: 5px;
+                                border-top-left-radius: 5px;
+                            }
+
+                            .btn {
+                                width: 20%;
+                                height: 40px;
+                                background: #ccc;
+                                border: 1px solid rgb(167, 164, 164);
+                                margin-top: 13px;
+                                color: black;
+                                font-size: 15px;
+                                border-bottom-right-radius: 10px;
+                                border-top-right-radius: 10px;
+                                transition: background-color 0.3s ease;
+                            }
+
+                            .btn:hover {
+                                background-color: #ccc;
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                .search {
+                                    float: none;
+                                    margin: 0 auto;
+                                }
+                            }
+
+                            .search {
+                                margin-top: -5px;
+                                margin-right: -15px;
+                            }
+                        </style>
+                        <!-- Lưu data product -->
+                        <script type="text/javascript">/*<![CDATA[*/$(document).ready(function () {
+                                                           nh_search_suggestion.init();
+                                                       });
+
+                        </script>
+                        <div class="login">
+                            <a data-aos="fade-up-right" href="login.html" class="muc3">Đăng nhập/Đăng kí</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="header-row-45" class="bg-menu  ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-3">
+                        <div data-aos="fade-right" class="navbar-header"> <a class="logo" href="#"><img
+                                    src="./img-2/logo-main.jpg" height="130" alt="Logo" /></a></div>
+                    </div>
+                    <!-- navbar-header   ở file boostrap-min.css -->
+                    <style>
+                        .logo {
+                            border-radius: 100px;
+                            margin-top: 50px;
+                        }
+                    </style>
+                    <style>
+                        .login {
+                            list-style: none;
+                            margin-top: 20px;
+                            display: flex;
+                            /* thêm thuộc tính display flex để canh chỉnh vị trí các phần tử bên trong */
+                            justify-content: flex-end;
+                            /* canh chỉnh phần tử con bên trong theo chiều ngang */
+                            align-items: center;
+                            /* canh chỉnh phần tử con bên trong theo chiều dọc */
+                        }
+
+                        .li {
+                            margin-left: 20px;
+                            /* khoảng cách giữa phần tử con bên trong */
+                        }
+
+                        .muc3 {
+                            text-decoration: none;
+                            color: #000;
+                            position: relative;
+                            /* thêm thuộc tính position để có thể sử dụng pseudo-element :before */
+                        }
+
+                        .muc3:before {
+                            content: "";
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                            width: 0%;
+                            height: 2px;
+                            background-color: #000;
+                            transition: all 0.3s ease-in-out;
+                            /* thêm hiệu ứng chuyển động khi rê chuột vào liên kết */
+                        }
+
+                        .muc3:hover:before {
+                            width: 100%;
+                            /* thêm chiều dài thanh trạng thái khi rê chuột vào liên kết */
+                        }
+                    </style>
+                    <!-- phần quan trọn : sử dụng file mega-menu2.css -->
+                    <div class="col-sm-9 col-xs-9">
+                        <div class="wsmenucontainer clearfix">
+                            <div class="overlapblackbg"></div>
+                            <div class="wsmobileheader clearfix"> <a id="wsnavtoggle"
+                                    class="animated-arrow"><span></span></a></div>
+                            <div class="wsmain  ">
+                                <nav class="wsmenu clearfix">
+                                    <ul class="mobile-sub wsmenu-list">
+                                        <li> <a class="navtext" href="index.html"> Trang chủ </a></li>
+                                        <li> <a class="navtext" href="GioiThieu.html"> Giới thiệu
+                                            </a></li>
+                                        <li> <a class="navtext" href="product.html"> Cửa hàng <i
+                                                    class="fa fa-angle-down"></i> </a>
+                                            <div class="megamenu clearfix">
+                                                <ul class="wstliststy05">
+                                                    <li class="wstheading"> <a href="product.html">Giày Nam</a></li>
+                                                    <li> <a href="product.html"> Nam tính </a></li>
+                                                    <li> <a href="product.html"> Cá tính </a></li>
+                                                    <li> <a href="product.html"> Năng độngđộng </a></li>
+                                        </li>
+
+                                    </ul>
+                                    <ul class="wstliststy05">
+                                        <li class="wstheading"> <a href="/nu">Nữ</a></li>
+                                        <li> <a href="product.html"> Nữ Tính </a></li>
+                                        <li> <a href="product.html"> Đáng yêu </a></li>
+
+
+                                        <li> <a href="product.html"> Son phấn
+                                            </a></li>
+                                        </li>
+                                    </ul>
+
+                            </div>
+                            </li>
+                            <li> <a class="navtext" href="TinTuc.html"> Tin tức <i class="fa fa-angle-down"></i> </a>
+                                <ul class="wsmenu-submenu">
+                                    <li><a class="" href="GioiThieu">Tin khuyến
+                                            mãi</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li> <a class="navtext" href="LienHeHopTac.html"> Hợp Tác </a></li> -->
+                            <li> <a class="navtext" href="lienhe.html"> Liên hệ </a></li>
+                            </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    
+
+    <div id="content-row-36" class="nh-row   ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-12">
+                    <div class="item_block" data-action="navigation/Navigation/category/12" data-method="get">
+                        <div class="col_left ">
+                            <div class=" box-left box ">
+                                <div class="title_style">
+                                    <h3>
+                                        <i class="fa fa-bars hidden-sm hidden-xs" aria-hidden="true"></i> Danh mục sản
+                                        phẩm <a href="javascript:void(0)" class="btn-view-nav-left fr show-mobile"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                                    </h3>
+                                    <div class="block-nav-left-mobile hidden-mobile active">
+                                        <nav id="catalog-all-12" class="bs-docs-sidebar side-bar-left active">
+                                            <ul id="item-pro-ul-12" class="nav bs-docs-sidenav active">
+                                                <li class="border-bottom active"><a href="product.html" class="item-sub-menu"> <span class="name"></span>Nam</a><a href="javascript:void(0)" class="btn-hide-toggle-sub-menu"><span class="caret"></span></a>
+                                                    <ul class="sub-menu hide-toggler-cont" style="display: block;">
+                                                        <li class="border-bottom active"><a href="product" class="">
+                                                                <span class="name"></span>Giày bóng rổ nam</a></li>
+                                                        <li class="border-bottom"><a href="#" class=""> <span class="name"></span>Giày bóng đá nam</a></li>
+                                                        <li class="border-bottom"><a href="#" class=""> <span class="name"></span>Giày tennis nam</a></li>
+                                                        <li class="border-bottom"><a href="#" class=""> <span class="name"></span>Giày đi bộ, chạy bộ nam</a></li>
+                                                        <li class="border-bottom"><a href="#" class=""> <span class="name"></span>Giày thể thao nam khác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="border-bottom"><a href="#" class="item-sub-menu"> <span class="name"></span>Nữ</a><a href="javascript:void(0)" class="btn-hide-toggle-sub-menu"><span class="caret"></span></a>
+                                                    <ul class="sub-menu hide-toggler-cont">
+                                                        <li class="border-bottom"><a href="#" class=""> <span class="name"></span>Giày bóng đá nữ</a></li>
+                                                        <li class="border-bottom"><a href="#" class=""> <span class="name"></span>Giày tennis nữ</a></li>
+                                                        <li class="border-bottom"><a href="#" class=""> <span class="name"></span>Giày đi bộ, chạy bộ nữ</a></li>
+                                                        <li class="border-bottom"><a href="#" class=""> <span class="name"></span>Giày thể thao nữ khác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="border-bottom"><a href="#" class="item-sub-menu"> <span class="name"></span>Trẻ em</a><a href="javascript:void(0)" class="btn-hide-toggle-sub-menu"><span class="caret"></span></a>
+                                                    <ul class="sub-menu hide-toggler-cont">
+                                                        <li class="border-bottom"><a href="#" class=""> <span class="name"></span>Giày bé trai</a></li>
+                                                        <li class="border-bottom"><a href="product.html" class=""> <span class="name"></span>Giày bé gái</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                       
+                    </div>
+                    <div class="item_block" data-action="search/Search/formAdvancedSearch/19" data-method="get">
+                        <div class="box-left hidden-mobile advanced-product clear-both padding-t-15">
+                            <!--
+        <ul class="nav_title clearfix">
+        <li class="active">
+            <a href="#">
+                                        Tìm kiếm nâng cao sản phẩm
+                                </a>
+            
+        </li>
+    </ul>
+    -->
+                            <div class="content-box-left">
+                                <form id="form-search-19" method="POST" action="" class="advanced-filter">
+    
+                                    <div class="box-left ">
+                                        <ul class="nav_title clearfix">
+                                            <li class="active">
+                                                <a href="#">
+                                                    Từ khóa
+                                                </a>
+    
+                                                <a class="btn-toggle-cont-box-left" href="javascript:void(0)">
+                                                    <i class="demo-icon icon-minus-3"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="content-box-left">
+                                            <input id="name" name="keyword" class="keyword-filter form-control" type="text" placeholder="Từ khóa tìm kiếm">
+                                        </div>
+                                    </div>
+    
+                                    <div class="box-left ">
+                                        <ul class="nav_title clearfix">
+                                            <li class="active">
+                                                <a href="#">
+                                                    Giá sản phẩm
+                                                </a>
+                                                <a class="btn-toggle-cont-box-left" href="javascript:void(0)">
+                                                    <i class="demo-icon icon-minus-3"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="content-box-left" style="padding: 0 8px;">
+                                            <div class="clearfix margin-b-10">
+                                                <small class="from-price pull-left">0</small>
+                                                <small class="to-price pull-right">35,000,000</small>
+                                            </div>
+    
+                                            <div id="price-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                                                <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 89.7436%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 89.7436%;"></span>
+                                            </div>
+                                            <div class="hidden">
+                                                <input name="price_range" class="price-range-input" type="hidden" value="0-35000000">
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+    
+    
+                                 
+                                </form>
+                            </div>
+                        </div>
+    
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                nh_advanced_filter.init();
+                            });
+                        </script>
+    
+                    </div>
+                    <div class="item_block" data-action="products/ProductsBlock/productBlock/69" data-method="get">
+                        <div class="box-product ">
+                            <div class="tab-product" id="title-block-69">
+                                <h3>Sản phẩm nổi bật</h3>
+                                <p></p>
+                            </div>
+                            <div class="box-detail-list-product">
+                                <div class="row">
+    
+                                    <div class="item-product style-view-small clearfix    col-md-12 col-sm-12 col-xs-12 ">
+                                        <div class="col-xs-4 noPadding">
+    
+    
+    
+                                            <div class="img border">
+                                                <a href="product.html" title="#"><img src="./img-2/thumb_350_199-13152948224030.jpg" alt="#"></a>
+                                            </div>
+                                            <!---->
+                                            <!--    <span class="status-product bg-red">HOT</span>-->
+                                            <!---->
+    
+                                        </div>
+                                        <div class="col-xs-8 noPadding">
+                                            <div class="info">
+                                                <h4 class="title-product">
+                                                    <a href="product.html" title="Giày chạy nữ Li-ning ARCL028-2 phối màu">Giày chạy nữ
+                                                        Li-ning ARCL028-2...</a>
+                                                </h4>
+    
+                                                <div class="price">
+                                                    <p class="price-well">
+                                                        876,000 ₫
+                                                    </p>
+                                                    <p class="price-before">
+                                                        976,000 ₫
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+    
+                                    <div class="item-product style-view-small clearfix    col-md-12 col-sm-12 col-xs-12 ">
+                                        <div class="col-xs-4 noPadding">
+    
+    
+    
+                                            <div class="img border">
+                                                <a href="product.html" title="#"><img src="./img-2/thumb_350_giay-tennis-erke-2091-erke-091-201-xanh-do-2.jpg" alt="#"></a>
+                                            </div>
+                                            <!---->
+                                            <!--    <span class="status-product bg-red">HOT</span>-->
+                                            <!---->
+    
+                                        </div>
+                                        <div class="col-xs-8 noPadding">
+                                            <div class="info">
+                                                <h4 class="title-product">
+                                                    <a href="detail-1.html" title="Giày chạy nữ Xtep 984218116068-4 hồng xanh neon">Giày
+                                                        chạy nữ Xtep 984218116068-4...</a>
+                                                </h4>
+    
+                                                <div class="price">
+                                                    <p class="price-well">
+                                                        1,419,000 ₫
+                                                    </p>
+                                                    <p class="price-before">
+                                                        1,519,000 ₫
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+    
+                                    <div class="item-product style-view-small clearfix    col-md-12 col-sm-12 col-xs-12 ">
+                                        <div class="col-xs-4 noPadding">
+    
+    
+    
+                                            <div class="img border">
+                                                <a href="detail-1.html" title="#"><img src="./img-2/product-3.jpg" alt="#"></a>
+                                            </div>
+                                            <!---->
+                                            <!--    <span class="status-product bg-red">HOT</span>-->
+                                            <!---->
+    
+                                        </div>
+                                        <div class="col-xs-8 noPadding">
+                                            <div class="info">
+                                                <h4 class="title-product">
+                                                    <a href="#" title="Giày chạy nữ Li-ning ARHM008-8 họa tiết hoa xanh ngọc">Giày
+                                                        chạy nữ Li-ning ARHM008-8...</a>
+                                                </h4>
+    
+                                                <div class="price">
+                                                    <p class="price-well">
+                                                        1,690,000 ₫
+                                                    </p>
+                                                    <p class="price-before">
+                                                        1,790,000 ₫
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+    
+                                    <div class="item-product style-view-small clearfix    col-md-12 col-sm-12 col-xs-12 ">
+                                        <div class="col-xs-4 noPadding">
+    
+    
+    
+                                            <div class="img border">
+                                                <a href="#" title="#"><img src="./img-2/product-4.jpg" alt="#"></a>
+                                            </div>
+                                            <!---->
+                                            <!--    <span class="status-product bg-red">HOT</span>-->
+                                            <!---->
+    
+                                        </div>
+                                        <div class="col-xs-8 noPadding">
+                                            <div class="info">
+                                                <h4 class="title-product">
+                                                    <a href="#" title="Giày tennis Babolat Jet Mach II AC Or/Bl (30S18629-6008)">Giày
+                                                        tennis Babolat Jet Mach II AC...</a>
+                                                </h4>
+    
+                                                <div class="price">
+                                                    <p class="price-well">
+                                                        2,599,000 ₫
+                                                    </p>
+                                                    <p class="price-before">
+                                                        3,149,000 ₫
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+    
+                                    <div class="item-product style-view-small clearfix    col-md-12 col-sm-12 col-xs-12 ">
+                                        <div class="col-xs-4 noPadding">
+                                            <div class="img border">
+                                                <a href="product.html" title="#"><img src="./img-2/thumb_350_giay-tennis-erke-2091-erke-091-201-xanh-do-2.jpg" alt="#"></a>
+                                            </div>
+                                            <!---->
+                                            <!--    <span class="status-product bg-red">HOT</span>-->
+                                            <!---->
+                                        </div>
+                                        <div class="col-xs-8 noPadding">
+                                            <div class="info">
+                                                <h4 class="title-product">
+                                                    <a href="product.html" title="Giày Tennis ERKE 2091">Giày Tennis ERKE 2091</a>
+                                                </h4>
+    
+                                                <div class="price">
+                                                    <p class="price-well">
+                                                        719,000 ₫
+                                                    </p>
+                                                    <p class="price-before">
+                                                        1,200,000 ₫
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-left"> <img alt="" src="/uploads/plugin/custom_img/2018-06-09/custom-banner-left.jpg"></div>
+                </div>
+                <div class="col-sm-9 col-xs-12">
+                    <form id="form-list" method="POST" action="">
+                        <div id="load-list-data">
+                            <div class="top-list-product-subpage">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="title-sub-category"> Giày bóng rổ nam <span class="number hidden-xs">(9 Sản
+                                                phẩm)</span></h2>
+                                        <div class="sort-by-product hidden-xs">
+                                            <div class="item-dropdown dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Sắp xếp <span class="caret"></span> </a>
+                                                <ul class="dropdown-menu" id="other-sort" aria-labelledby="other-sort">
+                                                    <li> <a href="javascript:void(0)" class="other-sort">Sắp xếp theo vị
+                                                            trí</a> <input id="" type="radio" name="other_sort" value="position-down" class="hidden">
+                                                    </li>
+                                                    <li> <a href="javascript:void(0)" class="other-sort">Sắp xếp theo
+                                                            tên</a> <input id="" type="radio" name="other_sort" value="name-up" class="hidden"></li>
+                                                    <li> <a href="javascript:void(0)" class="other-sort">Sắp xếp theo
+                                                            giá tăng dần</a>
+                                                        <input id="" type="radio" name="other_sort" value="price-up" class="hidden">
+                                                    </li>
+                                                    <li> <a href="javascript:void(0)" class="other-sort">Sắp xếp theo
+                                                            giá giảm dần</a>
+                                                        <input id="" type="radio" name="other_sort" value="price-down" class="hidden">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 ">
+                                        <div class="clearfix">
+                                            <div class="view-style Foatright"> <a href="javascript:void(0)" data-key-view="list_view_products" data-type="grid" class="btn-view btn-view-gird active"> <i class="demo-icon icon-th-large-3"></i>
+                                                </a> <a href="javascript:void(0)" data-key-view="list_view_products" data-type="list" class="btn-view btn-view-list "> <i class="demo-icon icon-th-4"></i> </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-detail-list-product">
+                                <div class="row">
+                                 
+                                    <div class="list-item  col-md-6 col-sm-5 col-xs-9  ">
+                                        <div class="item-product hover-action-product style-view-2 clearfix"> <span class="status-product bg-red">- 6%</span>
+                                            <div class="img border bg-img-122" title="Sneakers Biti's Hunter Originals màu cam"> <a href="#" title="Sneakers Biti's Hunter Originals màu cam"> <img src="./img-2/product-5.jpg" alt="Sneakers Biti's Hunter Originals màu cam" class="img-product"> </a>
+                                                <div class="action-product"> <a href="javascript://" class="item-action btn-shop-cart " item-id="164" status-store=""> oder </a> <a href="javascript://" class="item-action preview-product-modal" product_id="122"> <i class="fa fa-search"></i> </a> <a href="javascript://" class="item-action btn-compare" product-id="122"> <i class="fa fa-retweet"></i>
+                                                    </a></div>
+                                            </div>
+                                            <div class="info">
+                                                <h4 class="title-product"> <a href="#">
+                                                        Sneakers Biti's Hunter Originals màu cam </a></h4>
+                                                <div class="price price-inline">
+                                                    <p class="price-well"> 650,000 ₫</p>
+                                                    <p class="price-before"> 690,000 ₫</p>
+                                                </div>
+                                                <div class="show-list">
+                                                    <div class="desc-product-thumb">
+                                                        <p>Biti's là một thương hiệu giày Việt uy tín được biết đến với
+                                                            những sản phẩm
+                                                            bền bỉ&nbsp;và rất êm chân. Hơn&nbsp;thế, giày&nbsp;Biti's
+                                                            ngày càng phát
+                                                            triển với những mẫu mã mới cập nhật những xu hướng thời
+                                                            trang hiện đại. Điển
+                                                            hình là mẫu&nbsp;sneakers&nbsp;Biti's Hunter Originals màu
+                                                            cam không chỉ
+                                                            được thiết kế chuyên dụng hỗ trợ tối ưu cho chân người mang
+                                                            khi vận động mà
+                                                            còn có kiểu dáng trẻ trung, đẹp mắt, tiếp thêm sự tự tin cho
+                                                            bạn.</p>
+                                                        <ul>
+                                                            <li>Chất liệu da tổng hợp và vải dệt thông thoáng</li>
+                                                            <li>Đế giày êm chân,&nbsp;bền bỉ, cao 3cm hỗ trợ giảm sốc
+                                                                khi di chuyển</li>
+                                                            <li>Sản xuất tại Việt Nam</li>
+                                                        </ul>
+                                                    </div> <a href="javascript:void(0)" class="btn btn-main-2 btn-black-2 btn-shop-cart" item-id="164" quantity="1" product-id="122" status-store="">Mua hàng</a>
+                                                </div>
+                                                <div class="content-attr hidden"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div00000 class="list-item  col-md-5 col-sm-5 col-xs-6  ">
+                                        <div class="item-product hover-action-product style-view-2 clearfix"> <span class="status-product bg-red">HOT</span>
+                                            <div class="img border bg-img-121" title="Giày chạy nam Xtep 983219116512-2 màu đen"> <a href="#" title="Giày chạy nam Xtep 983219116512-2 màu đen"> <img src="#" alt="Giày chạy nam Xtep 983219116512-2 màu đen" class="img-product"> </a>
+                                                <div class="action-product"> <a href="javascript://" class="item-action btn-shop-cart " item-id="163" status-store=""> oder </a> <a href="javascript://" class="item-action preview-product-modal" product_id="121"> <i class="fa fa-search"></i> </a> <a href="javascript://" class="item-action btn-compare" product-id="121"> <i class="fa fa-retweet"></i>
+                                                    </a></div>
+                                            </div>
+                                            <div class="info">
+                                                <h4 class="title-product"> <a href="#">
+                                                        Giày chạy nam Xtep 983219116512-2 màu đen </a></h4>
+                                                <div class="price price-inline">
+                                                    <p class="price-well"> 989,000 ₫</p>
+                                                    <p class="price-before"> 1,009,000 ₫</p>
+                                                </div>
+                                                <div class="show-list">
+                                                    <div class="desc-product-thumb">
+                                                        <p>Được làm từ chất liệu siêu nhẹ cùng&nbsp;thiết kế khỏe khoắn,
+                                                            Giày chạy nam
+                                                            Xtep 983219116512-2 màu đen&nbsp;xứng đáng&nbsp;là người bạn
+                                                            đồng hành đáng
+                                                            tin cậy của bạn trên mọi cung đường.</p>
+                                                        <ul>
+                                                            <li>Được làm từ da tổng hợp (Synthetic Leather) và vải lưới
+                                                                thể thao (Mesh)
+                                                            </li>
+                                                            <li>Thiết kế cổ ngắn, dáng thể thao khỏe khoắn</li>
+                                                            <li>Siêu nhẹ, khả năng tạo ma sát tốt</li>
+                                                            <li>Xuất xứ: Trung Quốc</li>
+                                                        </ul>
+                                                    </div> <a href="javascript:void(0)" class="btn btn-main-2 btn-black-2 btn-shop-cart" item-id="163" quantity="1" product-id="121" status-store="">Mua hàng</a>
+                                                </div>
+                                                <div class="content-attr hidden"></div>
+                                            </div>
+                                        </div>
+                                </div00000></div>
+                                <div class="list-item  col-md-4 col-sm-4 col-xs-6  ">
+                                    <div class="item-product hover-action-product style-view-2 clearfix"> <span class="status-product bg-red">- 8%</span>
+                                        <div class="img border bg-img-120" title="Giày chạy nam Xtep 983219116317-2 màu xám"> <a href="#" title="Giày chạy nam Xtep 983219116317-2 màu xám"> <img src="./img-2/product-6.jpg" alt="Giày chạy nam Xtep 983219116317-2 màu xám" class="img-product">
+                                            </a>
+                                            <div class="action-product"> <a href="javascript://" class="item-action btn-shop-cart " item-id="162" status-store="">
+                                                    oder </a> <a href="javascript://" class="item-action preview-product-modal" product_id="120"> <i class="fa fa-search"></i> </a> <a href="javascript://" class="item-action btn-compare" product-id="120"> <i class="fa fa-retweet"></i>
+                                                </a></div>
+                                        </div>
+                                        <div class="info">
+                                            <h4 class="title-product"> <a href="#">
+                                                    Giày chạy nam Xtep 983219116317-2 màu xám </a></h4>
+                                            <div class="price price-inline">
+                                                <p class="price-well"> 549,000 ₫</p>
+                                                <p class="price-before"> 599,000 ₫</p>
+                                            </div>
+                                            <div class="show-list">
+                                                <div class="desc-product-thumb">
+                                                    <p>Được làm từ chất liệu siêu nhẹ cùng&nbsp;thiết kế khỏe khoắn,
+                                                        Giày chạy nam
+                                                        Xtep 983219116317-2 màu xám&nbsp;xứng đáng&nbsp;là người bạn
+                                                        đồng hành đáng
+                                                        tin cậy của bạn trên mọi cung đường.</p>
+                                                    <ul>
+                                                        <li>Được làm từ da tổng hợp (Synthetic Leather) và vải lưới thể
+                                                            thao (Mesh)
+                                                        </li>
+                                                        <li>Thiết kế cổ ngắn, dáng thể thao khỏe khoắn</li>
+                                                        <li>Siêu nhẹ, khả năng tạo ma sát tốt</li>
+                                                        <li>Xuất xứ: Trung Quốc</li>
+                                                    </ul>
+                                                </div> <a href="javascript:void(0)" class="btn btn-main-2 btn-black-2 btn-shop-cart" item-id="162" quantity="1" product-id="120" status-store="">Mua hàng</a>
+                                            </div>
+                                            <div class="content-attr hidden"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-item  col-md-4 col-sm-4 col-xs-6  ">
+                                    <div class="item-product hover-action-product style-view-2 clearfix"> <span class="status-product bg-red">HOT</span>
+                                        <div class="img border bg-img-118" title="Giày bóng rổ nam Peak Dwight Howard I E62003A đen xám"> <a href="#" title="Giày bóng rổ nam Peak Dwight Howard I E62003A đen xám"> <img src="./img-2/product-7.jpg" alt="Giày bóng rổ nam Peak Dwight Howard I E62003A đen xám" class="img-product">
+                                            </a>
+                                            <div class="action-product"> <a href="javascript://" class="item-action btn-shop-cart " item-id="160" status-store="">
+                                                    oder </a> <a href="javascript://" class="item-action preview-product-modal" product_id="118"> <i class="fa fa-search"></i> </a> <a href="javascript://" class="item-action btn-compare" product-id="118"> <i class="fa fa-retweet"></i>
+                                                </a></div>
+                                        </div>
+                                        <div class="info">
+                                            <h4 class="title-product"> <a href="#">
+                                                    Giày bóng rổ nam Peak Dwight Howard I E62003A đen xám </a></h4>
+                                            <div class="price price-inline">
+                                                <p class="price-well"> 1,890,000 ₫</p>
+                                                <p class="price-before"> 1,990,000 ₫</p>
+                                            </div>
+                                            <div class="show-list">
+                                                <div class="desc-product-thumb">
+                                                    <p>Giày bóng rổ nam Peak Dwight Howard I E62003A đen xám&nbsp;được
+                                                        làm từ chất
+                                                        liệu da và&nbsp;vải thể thao siêu nhẹ, bền đẹp, hỗ trợ tập luyện
+                                                        đạt hiệu
+                                                        quả tối đa,&nbsp;sẽ là lựa chọn hoàn hảo cho phong cách thời
+                                                        trang thể thao
+                                                        của phái mạnh.</p>
+                                                    <ul>
+                                                        <li>Được làm từ chất liệu Microfiber (da tổng hợp), vải lưới thể
+                                                            thao và cao
+                                                            su có khả năng hạn chế mài mòn</li>
+                                                        <li>Thiết kế chuyên biệt cho bộ môn bóng rổ</li>
+                                                        <li>Đế bằng cao su đặc biệt, bám sàn và&nbsp;có rãnh&nbsp;chống
+                                                            trượt</li>
+                                                        <li>Hàng chính hãng, sản xuất tại Trung Quốc</li>
+                                                    </ul>
+                                                </div> <a href="javascript:void(0)" class="btn btn-main-2 btn-black-2 btn-shop-cart" item-id="160" quantity="1" product-id="118" status-store="">Mua hàng</a>
+                                            </div>
+                                            <div class="content-attr hidden"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-item  col-md-4 col-sm-4 col-xs-6  ">
+                                    <div class="item-product hover-action-product style-view-2 clearfix"> <span class="status-product bg-red">- 6%</span>
+                                        <div class="img border bg-img-117" title="Giày bóng rổ nam Peak Lightning IV E61053A bạc đen"> <a href="#" title="Giày bóng rổ nam Peak Lightning IV E61053A bạc đen"> <img src="./img-2/product-8.jpg" alt="Giày bóng rổ nam Peak Lightning IV E61053A bạc đen" class="img-product">
+                                            </a>
+                                            <div class="action-product"> <a href="javascript://" class="item-action btn-shop-cart " item-id="159" status-store="">
+                                                    oder </a> <a href="javascript://" class="item-action preview-product-modal" product_id="117"> <i class="fa fa-search"></i> </a> <a href="javascript://" class="item-action btn-compare" product-id="117"> <i class="fa fa-retweet"></i>
+                                                </a></div>
+                                        </div>
+                                        <div class="info">
+                                            <h4 class="title-product"> <a href="#">
+                                                    Giày bóng rổ nam Peak Lightning IV E61053A bạc đen </a></h4>
+                                            <div class="price price-inline">
+                                                <p class="price-well"> 1,590,000 ₫</p>
+                                                <p class="price-before"> 1,690,000 ₫</p>
+                                            </div>
+                                            <div class="show-list">
+                                                <div class="desc-product-thumb">
+                                                    <p>Giày bóng rổ&nbsp;nam&nbsp;Peak&nbsp;Lightning IV E61053A bạc
+                                                        đen&nbsp;được
+                                                        làm từ chất liệu da và&nbsp;vải thể thao siêu nhẹ, bền đẹp, hỗ
+                                                        trợ tập luyện
+                                                        đạt hiệu quả tối đa,&nbsp;sẽ là lựa chọn hoàn hảo cho phong cách
+                                                        thời trang
+                                                        thể thao của phái mạnh.</p>
+                                                    <ul>
+                                                        <li>Được làm từ chất liệu Microfiber (da tổng hợp), vải lưới thể
+                                                            thao và cao
+                                                            su có khả năng hạn chế mài mòn</li>
+                                                        <li>Thiết kế chuyên biệt cho bộ môn bóng rổ</li>
+                                                        <li>Đế bằng cao su đặc biệt, bám sàn và&nbsp;có rãnh&nbsp;chống
+                                                            trượt</li>
+                                                        <li>Hàng chính hãng, sản xuất tại Trung Quốc</li>
+                                                    </ul>
+                                                </div> <a href="javascript:void(0)" class="btn btn-main-2 btn-black-2 btn-shop-cart" item-id="159" quantity="1" product-id="117" status-store="">Mua hàng</a>
+                                            </div>
+                                            <div class="content-attr hidden"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-item  col-md-4 col-sm-4 col-xs-6  ">
+                                    <div class="item-product hover-action-product style-view-2 clearfix"> <span class="status-product bg-red">HOT</span>
+                                        <div class="img border bg-img-116" title="Giày bóng rổ Peak Tony Parker IV E64323A màu tím">
+                                            <a href="#" title="Giày bóng rổ Peak Tony Parker IV E64323A màu tím"> <img src="./img-2/product-9.jpg" alt="Giày bóng rổ Peak Tony Parker IV E64323A màu tím" class="img-product"> </a>
+                                            <div class="action-product"> <a href="javascript://" class="item-action btn-shop-cart " item-id="158" status-store="">
+                                                    oder </a> <a href="javascript://" class="item-action preview-product-modal" product_id="116"> <i class="fa fa-search"></i> </a> <a href="javascript://" class="item-action btn-compare" product-id="116"> <i class="fa fa-retweet"></i>
+                                                </a></div>
+                                        </div>
+                                        <div class="info">
+                                            <h4 class="title-product"> <a href="#">
+                                                    Giày bóng rổ Peak Tony Parker IV E64323A màu tím </a></h4>
+                                            <div class="price price-inline">
+                                                <p class="price-well"> 1,850,000 ₫</p>
+                                                <p class="price-before"> 1,890,000 ₫</p>
+                                            </div>
+                                            <div class="show-list">
+                                                <div class="desc-product-thumb">
+                                                    <p>Chất liệu: Da tổng hợp và lưới</p>
+                                                    <p>Đế bằng cao su siêu bền</p>
+                                                    <p>Thiết kế cổ thấp</p>
+                                                    <p>Công nghệ Surface cho thân giày nhẹ, bảo vệ tối ưu bàn chân</p>
+                                                    <p>Công nghệ Gradient Dual cho sự ổn định và linh hoạt ở đế giày</p>
+                                                    <p>Công nghệ Cushion-3 mang đến sự êm ái, đàn hồi</p>
+                                                    <p>Gót chân trang bị miếng lót công nghệ S-Pad</p>
+                                                    <p>Hàng chính hãng, sản xuất tại Trung Quốc</p>
+                                                </div> <a href="javascript:void(0)" class="btn btn-main-2 btn-black-2 btn-shop-cart" item-id="158" quantity="1" product-id="116" status-store="">Mua hàng</a>
+                                            </div>
+                                            <div class="content-attr hidden"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-item  col-md-4 col-sm-4 col-xs-6  ">
+                                    <div class="item-product hover-action-product style-view-2 clearfix"> <span class="status-product bg-red">- 2%</span>
+                                        <div class="img border bg-img-115" title="Giày bóng rổ nam Peak Delly 1 EW7201A màu xanh lá"> <a href="#" title="Giày bóng rổ nam Peak Delly 1 EW7201A màu xanh lá"> <img src="./img-2/product-10.jpg" alt="Giày bóng rổ nam Peak Delly 1 EW7201A màu xanh lá" class="img-product">
+                                            </a>
+                                            <div class="action-product"> <a href="javascript://" class="item-action btn-shop-cart " item-id="157" status-store="">
+                                                    oder </a> <a href="javascript://" class="item-action preview-product-modal" product_id="115"> <i class="fa fa-search"></i> </a> <a href="javascript://" class="item-action btn-compare" product-id="115"> <i class="fa fa-retweet"></i>
+                                                </a></div>
+                                        </div>
+                                        <div class="info">
+                                            <h4 class="title-product"> <a href="#">
+                                                    Giày bóng rổ nam Peak Delly 1 EW7201A màu xanh lá </a></h4>
+                                            <div class="price price-inline">
+                                                <p class="price-well"> 1,558,000 ₫</p>
+                                                <p class="price-before"> 1,590,000 ₫</p>
+                                            </div>
+                                            <div class="show-list">
+                                                <div class="desc-product-thumb">
+                                                    <p>Chất liệu: Da tổng hợp, vải, lưới</p>
+                                                    <p>Đế nhựa dẻo siêu nhẹ</p>
+                                                    <p>Công nghệ Surface cho thân giày nhẹ, bảo vệ tối ưu bàn chân</p>
+                                                    <p>Công nghệ Gradient Dual cho sự ổn định và linh hoạt ở đế giày</p>
+                                                    <p>Công nghệ Cushion-3 mang đến sự êm ái, đàn hồi</p>
+                                                    <p>Hàng chính hãng, sản xuất tại Trung Quốc</p>
+                                                </div> <a href="javascript:void(0)" class="btn btn-main-2 btn-black-2 btn-shop-cart" item-id="157" quantity="1" product-id="115" status-store="">Mua hàng</a>
+                                            </div>
+                                            <div class="content-attr hidden"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-item  col-md-2   ">
+                                    <div class="item-product hover-action-product style-view-2 clearfix"> <span class="status-product bg-red">HOT</span>
+                                        <div class="img border bg-img-114" title="Giày bóng rổ nam Peak Basketball EW72001A màu xanh dương"> <a href="#" title="Giày bóng rổ nam Peak Basketball EW72001A màu xanh dương"> <img src="./img-2/product-11.jpg" alt="Giày bóng rổ nam Peak Basketball EW72001A màu xanh dương" class="img-product"> </a>
+                                            <div class="action-product"> <a href="javascript://" class="item-action btn-shop-cart " item-id="156" status-store="">
+                                                    oder </a> <a href="javascript://" class="item-action preview-product-modal" product_id="114"> <i class="fa fa-search"></i> </a> <a href="javascript://" class="item-action btn-compare" product-id="114"> <i class="fa fa-retweet"></i>
+                                                </a></div>
+                                        </div>
+                                        <div class="info">
+                                            <h4 class="title-product"> <a href="#">
+                                                    Giày bóng rổ nam Peak Basketball EW72001A màu xanh dương </a></h4>
+                                            <div class="price price-inline">
+                                                <p class="price-well"> 1,150,000 ₫</p>
+                                                <p class="price-before"> 1,290,000 ₫</p>
+                                            </div>
+                                            <div class="show-list">
+                                                <div class="desc-product-thumb">
+                                                    <p>Chất liệu: Da tổng hợp, vải, lưới</p>
+                                                    <p>Đế bằng cao su siêu nhẹ</p>
+                                                    <p>Thiết kế ôm chân, thoáng khí</p>
+                                                    <p>Đàn hồi tốt, bảo vệ chân</p>
+                                                    <p>Hàng chính hãng, sản xuất tại Trung Quốc</p>
+                                                </div> <a href="javascript:void(0)" class="btn btn-main-2 btn-black-2 btn-shop-cart" item-id="156" quantity="1" product-id="114" status-store="">Mua hàng</a>
+                                            </div>
+                                            <div class="content-attr hidden"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer" class="nh-row">
+
+        <!--   _________ -->
+
+        <div id="footer-row-24" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="navbar-header"> <a class="logo" href="#"> <img style="boder:none;"
+                                    data-aos="fade-right" src="./img-2/logo-main.jpg" width="140" width="100"
+                                    height="100" alt="Logo" style="border-radius: 10px;;"> </a>
+                        </div>
+                        <div class="item_block clearfix" style="" data-action="footer/FooterBlock/footerAddress/58">
+                            <div class="address-footer menu-footer-vertical  box-ft  ">
+                                <h4 class="title-menu-ft" data-aos="fade-up">VỀ CHÚNG TÔI</h4>
+                                <p class="about-desc"></p>
+                                <div class="address-ft">
+                                    <p><i class="demo-icon color-main icon-fax"></i>6868686868</p>
+                                    <p><i class="demo-icon color-main icon-phone"></i>0354781332</p>
+                                    <p><i class="demo-icon color-main icon-mail-alt"></i>tytytititity@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="menu-footer-vertical  box-ft ">
+                            <h4 class="title-menu-ft">Giay the thao</h4>
+
+                            <div class="list-menu-fy" style="padding-bottom: 10px;">
+                                <p>active</p>
+                                <p>Fire supper hot</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item_block clearfix" style="" data-action="main_menu/MainMenuBlock/menuBlock/63">
+                            <div class="menu-footer-vertical  box-ft  menu-ft ">
+                                <h4 class="title-menu-ft">Thông tin</h4>
+                                <div class="list-menu-fy">
+                                    <a href="GioiThieu.html">
+                                        Về Chúng Tôi </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tuyển Dụng </a><br>
+                                    <a href="GioiThieu.html">
+                                        Liên hệ </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tin tức </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tài liệu </a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item_block clearfix" style="" data-action="main_menu/MainMenuBlock/menuBlock/61">
+                            <div class="menu-footer-vertical  box-ft  menu-ft ">
+                                <h4 class="title-menu-ft">Câu hỏi thường gặp</h4>
+                                <div class="list-menu-fy">
+                                    <a href="#">
+                                        Chương trình ưu đãi </a><br>
+                                    <a href="#">
+                                        Chất lượng sản phẩm </a><br>
+                                    <a href="#">
+                                        Những vấn đề phát sinh </a><br>
+                                    <a href="#">
+                                        Lần đầu tiên đặt hàng </a><br>
+                                    <a href="#">
+                                        Sản phẩm </a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- _______________ -->
+
+        <!-- footer row 46 -->
+        <div id="footer-row-46" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end 46 -->
+        <div id="footer-row-51" class="nh-row  bottom-footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="item_block clearfix" style="" data-action="footer/FooterBlock/footerCopyright/9">
+                            <div class="bottom-footer  ">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-8 col-xs-12">
+                                            <p class="coppyright">ThanhDev-BabyShop kính chào</p>
+                                        </div>
+                                        <div class="col-sm-4 col-sm-4 col-xs-12">
+                                            <div class="payment-support">
+                                                <img src="./img/end-logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/loadCart.js"></script>
+    <script>
+        setCartStorage()
+        //lắng nghe sự kiện lấy sản phẩm 
+        addListenerEvent()
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+  
+</body>
+
+</html>

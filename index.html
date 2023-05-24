@@ -1,0 +1,926 @@
+<!-- file chính -->
+<!DOCTYPE html>
+<html lang="vie">
+
+<head>
+    <title> Giày thể thao</title>
+    <meta http-equiv="content-language" content="vie" />
+    <meta property="og:title" content="Giày thể thao" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="./img./logo-edit2.jpg" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link rel="stylesheet" type="text/css" href="./css/boostrap-min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-chosen.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mega-menu.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleMenu.css" />
+    <link rel="stylesheet" type="text/css"href="https://fs-02.web4s.vn/template/fs-02/webroot/assets/css/fonts_vnsitecss.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://fs-02.web4s.vn/template/fs-02/webroot/css/style-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="https://fs-02.web4s.vn/template/fs-02/webroot/assets/css/fontello.css" />
+    <link rel="stylesheet" type="text/css" href="./css/page.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- js -->
+    <script type="text/javascript" src="./js/jquery2-1-1.js"></script>
+    <!-- boostrap ảnh hưởng tới product  danh mục -->
+    <script type="text/javascript" src="./js/boostrap-min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107079686-1"></script>
+    <!--  -->
+</head>
+
+<body>
+    <!-- ảnh hưởng style file boostrap-min.css -->
+    <div id="header" class="nh-row">
+        <div id="header-row-20" class="nh-row">
+            <div class="container">
+
+                <div class="row">
+                    <div data-aos="fade-right" class="col-sm-3 col-xs-3">
+                    </div>
+                    <div class="col-sm-5 col-xs-5">
+                        <div class="box-right">
+                            <div class="item-language item-dropdown Foatleft item-inline dropdown"> <a href="#"
+                                    class=""> <span class="icon-flag icon-flag-vi hide">&nbsp;</span> <span
+                                        class="icon_img"> <img width="16px" src="./img/logoVietNam.png"> </span>
+                                    Viêt nam <span class="fa fa-angle-down"></span> </a>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Số điện thoại header -->
+                        <p class="phone-number hidden-xs"> Điện thoại : 0354781332</p>
+                    </div>
+                    <!-- Giỏi hàng -->
+                    <div class="col-sm-4 col-xs-4">
+                        <!-- định nghĩa nav-right là khối to chưa giỏ hàng -->
+                        <div  class="nav-right ">
+                            <!-- boostrap cart located atm ain.css  lines 300
+                            -->
+                            <div class="mini-cart-order cart-order item-dropdown Foatright item-inline dropdown"> <a
+                                    href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"> <i
+                                        class="icon icon-cart"></i> <span class="number">0</span> </a>
+                                <div class="dropdown-menu pull-right" role="menu" aria-labelledby="drop61">
+                                    <div class="shoppingcart-box">
+                                        <div class="scrollbar" id="style-3">
+                                            <ul class="list clearfix force-overflow">
+                                                <li class="item"> <small class="text-center">Không có sản phẩm nào trong
+                                                        giỏ hàng</small></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="warp-loading-block hidden">
+                                            <div class="warp-bg"></div>
+                                        </div>
+                                    </div>
+                                    <!-- CART SẢN PHẨM -->
+
+                                    <!-- cart 2 -->
+
+                                    <!--  -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Nhớ sửa thanh search -->
+                        <div class="search">
+                            <input data-aos="fade-right" class="srch" type="search" name=""
+                                placeholder="Bạn cần tìm gì?">
+                            <a href="#"> <button data-aos="fade-left" class="btn">Search</button></a>
+                        </div>
+                        <style>
+                            body>* {
+                                max-width: 100%;
+                                max-height: 100%;
+                                overflow: hidden;
+                            }
+
+                            body>*>* {
+                                max-width: 100%;
+                            }
+
+
+
+                            /* Ẩn thanh trượt trên tất cả các phần tử */
+                            /* ::-webkit-scrollbar {
+  display: none;
+} */
+
+                            .nav-right .item-dropdown {
+                                margin: 5;
+                                margin-top: 15px;
+                                padding: 0;
+                            }
+
+                            i.icon.icon-cart {
+                                margin: 3;
+                            }
+
+                            .item-language.item-dropdown.Foatleft.item-inline.dropdown {
+                                margin-left: 10px;
+                                margin-top: 14px;
+                            }
+
+                            .search {
+                                width: 330px;
+                                float: left;
+                                margin-left: -160px;
+                                margin-top: 20px;
+                            }
+
+                            .srch {
+                                font-family: Arial, sans-serif;
+                                font-size: 18px;
+                                width: 200px;
+                                height: 40px;
+                                background: transparent;
+                                margin-top: 13px;
+                                border-right: none;
+                                float: left;
+                                padding: 10px;
+                                border-bottom-left-radius: 5px;
+                                border-top-left-radius: 5px;
+                            }
+
+                            .btn {
+                                width: 20%;
+                                height: 40px;
+                                background: #ccc;
+                                border: 1px solid rgb(167, 164, 164);
+                                margin-top: 13px;
+                                color: black;
+                                font-size: 15px;
+                                border-bottom-right-radius: 10px;
+                                border-top-right-radius: 10px;
+                                transition: background-color 0.3s ease;
+                            }
+
+                            .btn:hover {
+                                background-color: #ccc;
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                .search {
+                                    float: none;
+                                    margin: 0 auto;
+                                }
+                            }
+
+                            .search {
+                                margin-top: -5px;
+                                margin-right: -15px;
+                            }
+                        </style>
+                        <!-- Lưu data product -->
+                        <script type="text/javascript">/*<![CDATA[*/$(document).ready(function () {
+                                                           nh_search_suggestion.init();
+                                                       });
+
+                        </script>
+                        <div class="login">
+                            <a data-aos="fade-up-right" href="login.html" class="muc3">Đăng nhập/Đăng kí</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="header-row-45" class="bg-menu  ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-3">
+                        <div data-aos="fade-right" class="navbar-header"> <a class="logo" href="#"><img
+                                    src="./img-2/logo-main.jpg" height="130" alt="Logo" /></a></div>
+                    </div>
+                    <!-- navbar-header   ở file boostrap-min.css -->
+                    <style>
+                        .logo {
+                            border-radius: 100px;
+                            margin-top: 50px;
+                        }
+                    </style>
+                    <style>
+                        .login {
+                            list-style: none;
+                            margin-top: 20px;
+                            display: flex;
+                            /* thêm thuộc tính display flex để canh chỉnh vị trí các phần tử bên trong */
+                            justify-content: flex-end;
+                            /* canh chỉnh phần tử con bên trong theo chiều ngang */
+                            align-items: center;
+                            /* canh chỉnh phần tử con bên trong theo chiều dọc */
+                        }
+
+                        .li {
+                            margin-left: 20px;
+                            /* khoảng cách giữa phần tử con bên trong */
+                        }
+
+                        .muc3 {
+                            text-decoration: none;
+                            color: #000;
+                            position: relative;
+                            /* thêm thuộc tính position để có thể sử dụng pseudo-element :before */
+                        }
+
+                        .muc3:before {
+                            content: "";
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                            width: 0%;
+                            height: 2px;
+                            background-color: #000;
+                            transition: all 0.3s ease-in-out;
+                            /* thêm hiệu ứng chuyển động khi rê chuột vào liên kết */
+                        }
+
+                        .muc3:hover:before {
+                            width: 100%;
+                            /* thêm chiều dài thanh trạng thái khi rê chuột vào liên kết */
+                        }
+                    </style>
+                    <!-- phần quan trọn : sử dụng file mega-menu2.css -->
+                    <div class="col-sm-9 col-xs-9">
+                        <div class="wsmenucontainer clearfix">
+                            <div class="overlapblackbg"></div>
+                            <div class="wsmobileheader clearfix"> <a id="wsnavtoggle"
+                                    class="animated-arrow"><span></span></a></div>
+                            <div class="wsmain  ">
+                                <nav class="wsmenu clearfix">
+                                    <ul class="mobile-sub wsmenu-list">
+                                        <li> <a class="navtext" href="index.html"> Trang chủ </a></li>
+                                        <li> <a class="navtext" href="GioiThieu.html"> Giới thiệu
+                                            </a></li>
+                                        <li> <a class="navtext" href="product.html"> Cửa hàng <i
+                                                    class="fa fa-angle-down"></i> </a>
+                                            <div class="megamenu clearfix">
+                                                <ul class="wstliststy05">
+                                                    <li class="wstheading"> <a href="product.html">Giày Nam</a></li>
+                                                    <li> <a href="product.html"> Nam tính </a></li>
+                                                    <li> <a href="product.html"> Cá tính </a></li>
+                                                    <li> <a href="product.html"> Năng độngđộng </a></li>
+                                        </li>
+
+                                    </ul>
+                                    <ul class="wstliststy05">
+                                        <li class="wstheading"> <a href="/nu">Nữ</a></li>
+                                        <li> <a href="product.html"> Nữ Tính </a></li>
+                                        <li> <a href="product.html"> Đáng yêu </a></li>
+
+
+                                        <li> <a href="product.html"> Son phấn
+                                            </a></li>
+                                        </li>
+                                    </ul>
+
+                            </div>
+                            </li>
+                            <li> <a class="navtext" href="TinTuc.html"> Tin tức <i class="fa fa-angle-down"></i> </a>
+                                <ul class="wsmenu-submenu">
+                                    <li><a class="" href="GioiThieu">Tin khuyến
+                                            mãi</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li> <a class="navtext" href="LienHeHopTac.html"> Hợp Tác </a></li> -->
+                            <li> <a class="navtext" href="lienhe.html"> Liên hệ </a></li>
+                            </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="nh-row">
+        <!-- Chỉnh background 
+        Viết báo cáo : thêm 
+    1. Căn chỉnh kích thước background sử dụng các thuộc tính quen thuộc margin , backgoound-size:cover; -->
+        <div id="content-row-0" class="nh-row  nhslider ">
+            <!-- sử dụng thêm tính năng aos automation  -->
+            <!-- sử dụng getboostrap , grid chia bố cục wed theo bảng col 12/12   chia nhỏ các mục ở đây background cho ăn tổng thể là 12 -->
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="container-fluid">
+                <div class="rowrow">
+                    <div class="col-md-12 col-xs-12">
+                        <img class="img" src="./img-2/backgorund-slider2.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            #content-row-0 {
+                background-image: url(./img-2/backgorund-slider.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 97%;
+                margin: 10px
+            }
+
+            .img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .rowrow {
+                margin-top: 10px;
+            }
+        </style>
+        <div id="content-row-25" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div div data-aos="flip-down" class="col-sm-4 col-xs-12">
+                        <div class="banner-pro"> <a class="item-banner" href="product.html" title="#"> <img
+                                    src="./img-2/custom-7-row-25-1.png" alt="#"> </a></div>
+                    </div>
+                    <div div data-aos="flip-down" class="col-sm-4 col-xs-12">
+                        <div class="banner-pro"> <a class="item-banner" href="product.html" title="#"> <img
+                                    src="./img-2/custom-7-row-25-2.png" alt="#"> </a></div>
+                    </div>
+                    <div div data-aos="flip-down" class="col-sm-4 col-xs-12">
+                        <div class="banner-pro-ct">
+                            <div class="banner-pro img-item-1"> <a class="item-banner" href="#" title="#"> <img
+                                        src="./img-2/custom-7-row-25-3.png" alt="#"> </a>
+                            </div>
+                            <div class="banner-pro img-item-2"> <a class="item-banner" href="#" title="#"> <img
+                                        src="./img-2/custom-7-row-25-4.png" alt="#"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Danh mục sản phẩm -->
+        <div id="content-row-49" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="">
+                        <div class="item_block">
+                            <div class=" box-product-style2 tab-default-product clearfix">
+                                <!--<div class="tab-product clearfix">-->
+                                <div data-aos="zoom-in-up" class="title-tab-product">
+                                    <h3>Danh mục</h3>
+                                    <p class="slogan-tab">Sản phẩm</p>
+                                </div>
+
+                                <div class="menu-tab-product">
+                                    <ul class="tab-nav-left clearfix" id="sub-menu01" role="tablist" limit="3"
+                                        list-type="list_default" display="" data-col="4" data-row="3"
+                                        data-url="/products/ProductsBlock/ajaxLoadProductByTab/14">
+                                        <li role="presentation" class="">
+                                            <a class="tab-item" href="product.html">Giày bóng đá nữ</a>
+                                        </li>
+                                        <li role="presentation" class="">
+                                            <a class="tab-item" href="product.html">Giày bóng đá nam</a>
+                                        </li>
+                                        <li role="presentation" class="">
+                                            <a class="tab-item" href="product.html">Giày bóng đá cá tính</a>
+                                        </li>
+                                        <li role="presentation" class="">
+                                            <a class="tab-item" href="product.html">Giày bóng đá nữ</a>
+                                        </li>
+                                        <li role="presentation" class="">
+                                            <a class="tab-item" href="product.html">Giày bóng đá nam</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--</div>-->
+                                <div class="content-tab-product">
+                                    <div class="tab-content">
+                                        <div id="tab-block-14-393" class="tab-pane active">
+                                            <div data-aos="zoom-out-right"
+                                                class="list-item  col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="item-product hover-action-product style-view-2 clearfix">
+                                                    <span class="status-product bg-red">HOT</span>
+
+                                                    <!-- Thêm ảnh product 1 -->
+                                                    <div class="img bg-img-146"
+                                                        title="Giày đá bóng Zocker ZTF 18VT Red-Black - Zocker ZTF 18VT Red-Black">
+                                                        <a href="product.html"
+                                                            title="Giày đá bóng Zocker ZTF 18VT Red-Black - Zocker ZTF 18VT Red-Black">
+                                                            <img src="./img-2/img-product-1.jpg"
+                                                                alt="Giày đá bóng Zocker ZTF 18VT Red-Black - Zocker ZTF 18VT Red-Black"
+                                                                class="img-product">
+                                                        </a>
+                                                        <div class="action-product">
+                                                            <a href="javascript://"
+                                                                class="item-action preview-mini-modal" product_id="146"
+                                                                status-store="">
+                                                                oder
+                                                            </a>
+
+                                                            <a href="javascript://"
+                                                                class="item-action preview-product-modal"
+                                                                product_id="146">
+                                                                <i class="fa fa-search"></i>
+                                                            </a>
+
+
+                                                            <a href="javascript://" class="item-action btn-compare"
+                                                                product-id="146">
+                                                                <i class="fa fa-retweet"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="info">
+                                                        <h4 class="title-product">
+                                                            <a href="#">
+                                                                Giày đá bóng Zocker ZTF 18VT Red-Black - Zocker ZTF 18VT
+                                                                Red-Black
+                                                            </a>
+                                                        </h4>
+
+                                                        <div class="price price-inline">
+                                                            <p class="price-well">
+                                                                540,000 ₫
+                                                            </p>
+                                                            <p class="price-before">
+                                                                640,000 ₫
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="show-list">
+                                                            <div class="desc-product-thumb">
+
+
+
+
+
+                                                                <p><strong>Giày đá bóng Zocker ZTF 18VT
+                                                                        Red/Black</strong>&nbsp;có những đột phá mới,
+                                                                    cũng như các bước cải tiến hơn về chất liệu da trên
+                                                                    thân giày, chất liệu làm nên đế giày nên được đánh
+                                                                    giá cao.</p>
+                                                                <ul>
+                                                                    <li>Đế giày có thiết kế với nhứng hàng đinh dài hai
+                                                                        bên hông, đinh dăm cao su nhỏ phần giữa và bên
+                                                                        trong thân, nên thích hợp nhất cho đa số sân cỏ
+                                                                        nhân tạo.&nbsp;</li>
+                                                                    <li>Bề mặt giày làm từ chất da PU, bên trong có lớp
+                                                                        lót mềm mại, thoáng khí tạo cảm giác thoải mái
+                                                                        khi bạn đang lướt trên sân cỏ.</li>
+                                                                    <li>Form giày thích hợp cho mọi kiểu chân, từ bàn
+                                                                        chân thon hay chân bè, nó giúp cho người mang có
+                                                                        cảm giác ôm chân ,có cảm giác chân thật nhất với
+                                                                        bóng.</li>
+                                                                    <li>Màu sắc giày trẻ trung, cá tính và nổi bật.</li>
+                                                                    <li>Logo Zocker với hình chú sóc dễ thương được in
+                                                                        nổi bật tại bề mặt giày.</li>
+                                                                </ul>
+
+
+                                                            </div>
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-main-2 btn-black-2 preview-mini-modal"
+                                                                item-id="188" quantity="1" product-id="146"
+                                                                status-store="">Mua hàng</a>
+                                                        </div>
+
+                                                        <div class="content-attr hidden">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-aos="zoom-in" class="list-item  col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="item-product hover-action-product style-view-2 clearfix">
+                                                    <span class="status-product bg-red">- 16%</span>
+
+                                                    <!-- thêm anh product 2 -->
+                                                    <div class="img bg-img-145"
+                                                        title="Giày đá bóng Zocker ZTF 18VT Blue-Black - ZTF 18VT Blue-Black">
+                                                        <a href="product.html"
+                                                            title="Giày đá bóng Zocker ZTF 18VT Blue-Black - ZTF 18VT Blue-Black">
+                                                            <img src="./img-2/img-product-3.jpg"
+                                                                alt="Giày đá bóng Zocker ZTF 18VT Blue-Black - ZTF 18VT Blue-Black"
+                                                                class="img-product">
+                                                        </a>
+                                                        <div class="action-product">
+                                                            <a href="javascript://"
+                                                                class="item-action preview-mini-modal" product_id="145"
+                                                                status-store="">
+                                                                oder
+                                                            </a>
+
+                                                            <a href="javascript://"
+                                                                class="item-action preview-product-modal"
+                                                                product_id="145">
+                                                                <i class="fa fa-search"></i>
+                                                            </a>
+
+
+                                                            <a href="javascript://" class="item-action btn-compare"
+                                                                product-id="145">
+                                                                <i class="fa fa-retweet"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h4 class="title-product">
+                                                            <a href="product.html">
+                                                                giay vip
+                                                            </a>
+                                                        </h4>
+
+                                                        <div class="price price-inline">
+                                                            <p class="price-well">
+                                                                540,000 ₫
+                                                            </p>
+                                                            <p class="price-before">
+                                                                640,000 ₫
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="show-list">
+                                                            <div class="desc-product-thumb">
+
+
+
+
+
+                                                                <p><strong>Giày đá bóng Zocker ZTF
+                                                                        18VT</strong><strong>&nbsp;Blue/Black&nbsp;</strong>&nbsp;có
+                                                                    những đột phá mới, cũng như các bước cải tiến hơn về
+                                                                    chất liệu da trên thân giày, chất liệu làm nên đế
+                                                                    giày nên được đánh giá cao.</p>
+                                                                <ul>
+                                                                    <li>Đế giày có thiết kế với nhứng hàng đinh dài hai
+                                                                        bên hông, đinh dăm cao su nhỏ phần giữa và bên
+                                                                        trong thân, nên thích hợp nhất cho đa số sân cỏ
+                                                                        nhân tạo.&nbsp;</li>
+                                                                    <li>Bề mặt giày làm từ chất da PU, bên trong có lớp
+                                                                        lót mềm mại, thoáng khí tạo cảm giác thoải mái
+                                                                        khi bạn đang lướt trên sân cỏ.</li>
+                                                                    <li>Form giày thích hợp cho mọi kiểu chân, từ bàn
+                                                                        chân thon hay chân bè, nó giúp cho người mang có
+                                                                        cảm giác ôm chân ,có cảm giác chân thật nhất với
+                                                                        bóng.</li>
+                                                                    <li>Màu sắc giày trẻ trung, cá tính và nổi bật.</li>
+                                                                    <li>Logo Zocker với hình chú sóc dễ thương được in
+                                                                        nổi bật tại bề mặt giày.</li>
+                                                                </ul>
+
+
+                                                            </div>
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-main-2 btn-black-2 preview-mini-modal"
+                                                                item-id="187" quantity="1" product-id="145"
+                                                                status-store="">Mua hàng</a>
+                                                        </div>
+
+                                                        <div class="content-attr hidden">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-aos="zoom-out-down"
+                                                class="list-item  col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="item-product hover-action-product style-view-2 clearfix">
+                                                    <span class="status-product bg-red">HOT</span>
+
+
+                                                    <div class="img bg-img-144"
+                                                        title="Giày đá bóng Zocker ZTF 18VT Royal-Orange - ZTF 18VT Royal-Orange">
+                                                        <a href="product.html
+                                                        "
+                                                            title="Giày đá bóng Zocker ZTF 18VT Royal-Orange - ZTF 18VT Royal-Orange">
+                                                            <img src="./img-2/img-product-2.jpg"
+                                                                alt="Giày đá bóng Zocker ZTF 18VT Royal-Orange - ZTF 18VT Royal-Orange"
+                                                                class="img-product">
+                                                        </a>
+                                                        <div class="action-product">
+                                                            <a class="item-action preview-mini-modal" product_id="144"
+                                                                status-store="">
+                                                                oder
+                                                            </a>
+
+                                                            <a href="javascript://"
+                                                                class="item-action preview-product-modal"
+                                                                product_id="144">
+                                                                <i class="fa fa-search"></i>
+                                                            </a>
+
+
+                                                            <a href="javascript://" class="item-action btn-compare"
+                                                                product-id="144">
+                                                                <i class="fa fa-retweet"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h4 class="title-product">
+                                                            <a href="#">
+                                                                Giày đá bóng Zocker ZTF 18VT Royal-Orange - ZTF 18VT
+                                                                Royal-Orange
+                                                            </a>
+                                                        </h4>
+
+                                                        <div class="price price-inline">
+                                                            <p class="price-well">
+                                                                540,000 ₫
+                                                            </p>
+                                                            <p class="price-before">
+                                                                640,000 ₫
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="show-list">
+                                                            <div class="desc-product-thumb">
+
+
+
+
+
+                                                                <p><strong>Giày đá bóng Zocker ZTF 18VT
+                                                                        Royal/Orange&nbsp;</strong>có những đột phá mới,
+                                                                    cũng như các bước cải tiến hơn về chất liệu da trên
+                                                                    thân giày, chất liệu làm nên đế giày nên được đánh
+                                                                    giá cao.</p>
+                                                                <ul>
+                                                                    <li>Đế giày có thiết kế với nhứng hàng đinh dài hai
+                                                                        bên hông, đinh dăm cao su nhỏ phần giữa và bên
+                                                                        trong thân, nên thích hợp nhất cho đa số sân cỏ
+                                                                        nhân tạo.&nbsp;</li>
+                                                                    <li>Bề mặt giày làm từ chất da PU, bên trong có lớp
+                                                                        lót mềm mại, thoáng khí tạo cảm giác thoải mái
+                                                                        khi bạn đang lướt trên sân cỏ.</li>
+                                                                    <li>Form giày thích hợp cho mọi kiểu chân, từ bàn
+                                                                        chân thon hay chân bè, nó giúp cho người mang có
+                                                                        cảm giác ôm chân ,có cảm giác chân thật nhất với
+                                                                        bóng.</li>
+                                                                    <li>Màu sắc giày trẻ trung, cá tính và nổi bật.</li>
+                                                                    <li>Logo Zocker với hình chú sóc dễ thương được in
+                                                                        nổi bật tại bề mặt giày.</li>
+                                                                </ul>
+
+
+                                                            </div>
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-main-2 btn-black-2 preview-mini-modal"
+                                                                item-id="186" quantity="1" product-id="144"
+                                                                status-store="">Mua hàng</a>
+                                                        </div>
+
+                                                        <div class="content-attr hidden">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end img1 -->
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .owl-item {
+                margin-left: 150px;
+            }
+
+            .title-tab-product {
+                padding: 10px;
+            }
+
+            .title-tab-product h3 {
+                margin-top: 15px;
+            }
+        </style>
+        <!-- <div id="content-row-52" class="nh-row  padding-t-15 margin-t-10 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="item_block" data-action="products/ProductsBlock/productBlock/42" data-method="get">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div id="content-row-54" class="nh-row  bg-banner-text ">
+            <div class="container">
+                <div class="row">
+                    <div data-aos="zoom-in-down" class="col-sm-12 col-xs-12">
+                        <div class="block-banner-text">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="des-banner">
+                                        <p class="des-1">online&in-store</p>
+                                        <h4>lựa chọn giày thể thao</h4>
+                                        <h2>toàn bộ giày mua<br /> tiết kiệm đến 20$</h2>
+                                        <p><a class="buton" href="#">xem bộ sưu tập</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-row-57" class="nh-row  bg-block-kh ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="content-Customer">
+                            <div class="tab-content" id="Tab_Customer">
+                                <div class="tab-pane fade in active" role="tabpanel" id="Customer"
+                                    aria-labelledby="Customer-tab">
+                                    <div id="slider_Customer" class="slider-product owl-carousel noNav owl-theme"
+                                        style="opacity: 1; display: block;">
+                                        <div class="owl-wrapper-outer">
+                                            <div class="owl-wrapper"
+                                                style="width: 3776px; left: 0px; display: block; transform: translate3d(0px, 0px, 0px); transition: all 0ms ease 0s;">
+                                                <div class="owl-item" style="width: 944px;">
+                                                    <div class="item item-customer text-center">
+                                                        <blockquote data-aos="fade-right" data-aos-offset="300"
+                                                            data-aos-easing="ease-in-sine" class="testimonials-text">
+                                                            <p class="desc-customer">Sản phẩm thật sự! rất chất lượng ,
+                                                                thoáng nhẹ êm mát , năng động từng bước chân.</p>
+                                                        </blockquote> <img src="./img-2/anh-Duc.jpg" height="100"
+                                                            width="90" alt="#">
+                                                        <p class="name">Manh Duc</p>
+                                                        <p class="chucvu"><em>BabyShop</em></p>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 944px;">
+                                                    <div class="item item-customer text-center">
+                                                        <blockquote data-aos="fade-right" data-aos-offset="300"
+                                                            data-aos-easing="ease-in-sine" class="testimonials-text">
+                                                            <p class="desc-customer">Sản phẩm là sự lựa chọn tuyệt với ,
+                                                                thât vui khi được mua sản phẩm của shop
+                                                                .</p>
+                                                        </blockquote> <img src="#" alt="#">
+                                                        <p class="name">Nguyễn Hữu Phong</p>
+                                                        <p class="chucvu">BabyShop</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-controls clickable">
+                                            <div class="owl-pagination">
+                                                <div class="owl-page active"><span class=""></span></div>
+                                                <div class="owl-page"><span class=""></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button id="btn-vietnamese">Tiếng Việt</button>
+<button id="btn-english">Tiếng Anh</button>
+    <div id="footer" class="nh-row">
+
+        <!--   _________ -->
+
+        <div id="footer-row-24" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="navbar-header"> <a class="logo" href="#"> <img style="boder:none;"
+                                    data-aos="fade-right" src="./img-2/logo-main.jpg" width="140" width="100"
+                                    height="100" alt="Logo" style="border-radius: 10px;;"> </a>
+                        </div>
+                        <div class="item_block clearfix" style="" data-action="footer/FooterBlock/footerAddress/58">
+                            <div class="address-footer menu-footer-vertical  box-ft  ">
+                                <h4 class="title-menu-ft" data-aos="fade-up">VỀ CHÚNG TÔI</h4>
+                                <p class="about-desc"></p>
+                                <div class="address-ft">
+                                    <p><i class="demo-icon color-main icon-fax"></i>6868686868</p>
+                                    <p><i class="demo-icon color-main icon-phone"></i>0354781332</p>
+                                    <p><i class="demo-icon color-main icon-mail-alt"></i>tytytititity@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="menu-footer-vertical  box-ft ">
+                            <h4 class="title-menu-ft">Giay the thao</h4>
+
+                            <div class="list-menu-fy" style="padding-bottom: 10px;">
+                                <p>active</p>
+                                <p>Fire supper hot</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item_block clearfix" style="" data-action="main_menu/MainMenuBlock/menuBlock/63">
+                            <div class="menu-footer-vertical  box-ft  menu-ft ">
+                                <h4 class="title-menu-ft">Thông tin</h4>
+                                <div class="list-menu-fy">
+                                    <a href="GioiThieu.html">
+                                        Về Chúng Tôi </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tuyển Dụng </a><br>
+                                    <a href="GioiThieu.html">
+                                        Liên hệ </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tin tức </a><br>
+                                    <a href="GioiThieu.html">
+                                        Tài liệu </a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="item_block clearfix" style="" data-action="main_menu/MainMenuBlock/menuBlock/61">
+                            <div class="menu-footer-vertical  box-ft  menu-ft ">
+                                <h4 class="title-menu-ft">Câu hỏi thường gặp</h4>
+                                <div class="list-menu-fy">
+                                    <a href="#">
+                                        Chương trình ưu đãi </a><br>
+                                    <a href="#">
+                                        Chất lượng sản phẩm </a><br>
+                                    <a href="#">
+                                        Những vấn đề phát sinh </a><br>
+                                    <a href="#">
+                                        Lần đầu tiên đặt hàng </a><br>
+                                    <a href="#">
+                                        Sản phẩm </a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- _______________ -->
+
+        <!-- footer row 46 -->
+        <div id="footer-row-46" class="nh-row   ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end 46 -->
+        <div id="footer-row-51" class="nh-row  bottom-footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="item_block clearfix" style="" data-action="footer/FooterBlock/footerCopyright/9">
+                            <div class="bottom-footer  ">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-8 col-xs-12">
+                                            <p class="coppyright">ThanhDev-BabyShop kính chào</p>
+                                        </div>
+                                        <div class="col-sm-4 col-sm-4 col-xs-12">
+                                            <div class="payment-support">
+                                                <img src="./img/end-logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/loadCart.js"></script>
+    <script>
+        setCartStorage()
+        //lắng nghe sự kiện lấy sản phẩm 
+        addListenerEvent()
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+  
+</body>
+
+</html>
